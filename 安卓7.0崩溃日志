@@ -1,0 +1,363 @@
+04-07 10:20:49.383 2115-2115/? I/art: Late-enabling -Xcheck:jni
+04-07 10:20:49.483 2115-2115/mrper.formatfa.mrper:app0 I/HwCust: Constructor found for class android.app.HwCustActivityImpl
+04-07 10:20:49.492 2115-2115/mrper.formatfa.mrper:app0 I/HwCust: Constructor found for class android.app.HwCustHwWallpaperManagerImpl
+04-07 10:20:49.500 2115-2115/mrper.formatfa.mrper:app0 W/ZipFileCache: Open zip file:mrper.formatfa.mrper failed!
+                                                                       Open zip file:framework-res failed!
+04-07 10:20:49.515 2115-2115/mrper.formatfa.mrper:app0 W/ZipFileCache: Open zip file:mrper.formatfa.mrper failed!
+                                                                       Open zip file:framework-res failed!
+04-07 10:20:49.549 2115-2115/mrper.formatfa.mrper:app0 I/Mrpoid: old dsmpath mythroad/
+                                                                 new dsmpath mythroad/320x480/
+04-07 10:20:49.549 2115-2115/mrper.formatfa.mrper:app0 I/Emulator: font path=/storage/emulated/0/mythroad/320x480/system/gb16_mrpoid.uc2
+04-07 10:20:49.550 2115-2115/mrper.formatfa.mrper:app0 I/Mrpoid: native_create gMainJniEnv=0xe86a3a10, m_initTid=2115
+                                                                 initJniId id_timerStart=0xe2d7cc94
+                                                                 字体加载成功 fd=58
+                                                                 native_create self=0xfff1868c,scn=0xfff18690,aud=0xfff18694
+                                                                 native_create gself=0x10080a,gscn=0x100812,gaud=0x10080e
+04-07 10:20:49.556 2115-2115/mrper.formatfa.mrper:app0 W/ZipFileCache: Open zip file:mrper.formatfa.mrper failed!
+04-07 10:20:49.569 2115-2115/mrper.formatfa.mrper:app0 I/Mrpoid: checkdir /mnt/sdcard/
+                                                                 checkdir /mnt/sdcard/mythroad/320x480/
+                                                                 checkdir /mnt/sdcard/mythroad/320x480/.disk/
+                                                                 checkdir /mnt/sdcard/mythroad/320x480/.disk/a/
+                                                                 checkdir /mnt/sdcard/mythroad/320x480/.disk/b/
+                                                                 checkdir /mnt/sdcard/mythroad/320x480/.disk/a/mythroad/
+                                                                 emu_getStringSysinfo env=0xe86a3a10,tid=2115
+04-07 10:20:49.581 2115-2115/mrper.formatfa.mrper:app0 I/Mrpoid: emu_getStringSysinfo env=0xe86a3a10,tid=2115
+04-07 10:20:49.591 2115-2115/mrper.formatfa.mrper:app0 I/mythroad: 51gtlzj.mrp
+04-07 10:20:49.592 2115-2115/mrper.formatfa.mrper:app0 I/mythroad: can not found #807022#*
+04-07 10:20:49.592 2115-2115/mrper.formatfa.mrper:app0 I/Mrpoid: mr_mem_get addr:0x0xcae80000 len:2097152
+04-07 10:20:49.593 2115-2115/mrper.formatfa.mrper:app0 I/mythroad: MEM-I:total:2097152,iTop:37816,ctrl:614400
+04-07 10:20:49.598 2115-2115/mrper.formatfa.mrper:app0 I/mythroad: data=0, eventId=0
+                                                                   data=0, eventId=2
+04-07 10:20:49.618 2115-2115/mrper.formatfa.mrper:app0 A/art: art/runtime/java_vm_ext.cc:470] JNI DETECTED ERROR IN APPLICATION: JNI GetIntField called with pending exception java.lang.StackOverflowError: stack size 8MB
+                                                              art/runtime/java_vm_ext.cc:470]   at int com.mrpoid.core.Emulator.vm_loadMrp(java.lang.String) (Emulator.java:-2)
+                                                              art/runtime/java_vm_ext.cc:470]   at void com.mrpoid.core.Emulator.start() (Emulator.java:382)
+                                                              art/runtime/java_vm_ext.cc:470]   at void com.mrpoid.app.EmulatorActivity.onCreate(android.os.Bundle) (EmulatorActivity.java:270)
+                                                              art/runtime/java_vm_ext.cc:470]   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:6910)
+                                                              art/runtime/java_vm_ext.cc:470]   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1123)
+                                                              art/runtime/java_vm_ext.cc:470]   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2746)
+                                                              art/runtime/java_vm_ext.cc:470]   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2864)
+                                                              art/runtime/java_vm_ext.cc:470]   at void android.app.ActivityThread.-wrap12(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+                                                              art/runtime/java_vm_ext.cc:470]   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1567)
+                                                              art/runtime/java_vm_ext.cc:470]   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:105)
+                                                              art/runtime/java_vm_ext.cc:470]   at void android.os.Looper.loop() (Looper.java:156)
+                                                              art/runtime/java_vm_ext.cc:470]   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6523)
+                                                              art/runtime/java_vm_ext.cc:470]   at java.lang.Object java.lang.reflect.Method.invoke!(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+                                                              art/runtime/java_vm_ext.cc:470]   at void com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run() (ZygoteInit.java:941)
+                                                              art/runtime/java_vm_ext.cc:470]   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:831)
+                                                              art/runtime/java_vm_ext.cc:470]   at void de.robv.android.xposed.XposedBridge.main(java.lang.String[]) (XposedBridge.java:107)
+                                                              art/runtime/java_vm_ext.cc:470]
+                                                              art/runtime/java_vm_ext.cc:470]     in call to GetIntField
+                                                              art/runtime/java_vm_ext.cc:470]     from int com.mrpoid.core.Emulator.vm_loadMrp(java.lang.String)
+                                                              art/runtime/java_vm_ext.cc:470] "main" prio=5 tid=1 Runnable
+                                                              art/runtime/java_vm_ext.cc:470]   | group="main" sCount=0 dsCount=0 obj=0x76def560 self=0xe8685400
+                                                              art/runtime/java_vm_ext.cc:470]   | sysTid=2115 nice=0 cgrp=default sched=1073741825/1 handle=0xeb467534
+                                                              art/runtime/java_vm_ext.cc:470]   | state=R schedstat=( 153483840 1537500 375 ) utm=9 stm=6 core=7 HZ=100
+                                                              art/runtime/java_vm_ext.cc:470]   | stack=0xff71d000-0xff71f000 stackSize=8MB
+                                                              art/runtime/java_vm_ext.cc:470]   | held mutexes= "mutator lock"(shared held)
+                                                              art/runtime/java_vm_ext.cc:470]   native: #00 pc 003577e5  /system/lib/libart.so (_ZN3art15DumpNativeStackERNSt3__113basic_ostreamIcNS0_11char_traitsIcEEEEiP12BacktraceMapPKcPNS_9ArtMethodEPv+128)
+                                                              art/runtime/java_vm_ext.cc:470]   native: #01 pc 00337dc1  /system/lib/libart.so (_ZNK3art6Thread9DumpStackERNSt3__113basic_ostreamIcNS1_11char_traitsIcEEEEbP12BacktraceMap+304)
+                                                              art/runtime/java_vm_ext.cc:470]   native: #02 pc 0023ba63  /system/lib/libart.so (_ZN3art9JavaVMExt8JniAbortEPKcS2_+846)
+                                                              art/runtime/java_vm_ext.cc:470]   native: #03 pc 0023bf9b  /system/lib/libart.so (_ZN3art9JavaVMExt9JniAbortVEPKcS2_St9__va_list+58)
+                                                              art/runtime/java_vm_ext.cc:470]   native: #04 pc 000cbbb3  /system/lib/libart.so (_ZN3art11ScopedCheck6AbortFEPKcz+42)
+                                                              art/runtime/java_vm_ext.cc:470]   native: #05 pc 000cb7a3  /system/lib/libart.so (_ZN3art11ScopedCheck11CheckThreadEP7_JNIEnv+362)
+                                                              art/runtime/java_vm_ext.cc:470]   native: #06 pc 000ca7b7  /system/lib/libart.so (_ZN3art11ScopedCheck22CheckPossibleHeapValueERNS_18ScopedObjectAccessEcNS_12JniValueTypeE+26)
+                                                              art/runtime/java_vm_ext.cc:470]   native: #07 pc 000c9c89  /system/lib/libart.so (_ZN3art11ScopedCheck5CheckERNS_18ScopedObjectAccessEbPKcPNS_12JniValueTypeE+800)
+                                                              art/runtime/java_vm_ext.cc:470]   native: #08 pc 000cf17b  /system/lib/libart.so (_ZN3art8CheckJNI8GetFieldEPKcP7_JNIEnvP8_jobjectP9_jfieldIDbNS_9Primitive4TypeE+498)
+                                                              art/runtime/java_vm_ext.cc:470]   native: #09 pc 000c42db  /system/lib/libart.so (_ZN3art8CheckJNI11GetIntFieldEP7_JNIEnvP8_jobjectP9_jfieldID+38)
+                                                              art/runtime/java_vm_ext.cc:470]   native: #10 pc 000091bb  /data/app/mrper.formatfa.mrper-2/lib/arm/libmrpoid.so (emu_measureChar+86)
+                                                              art/runtime/java_vm_ext.cc:470]   native: #11 pc 0000aa89  /data/app/mrper.formatfa.mrper-2/lib/arm/libmrpoid.so (mr_getCharBitmap+24)
+                                                              art/runtime/java_vm_ext.cc:470]   native: #12 pc 00017fb3  [anon:libc_malloc] (???)
+                                                              art/runtime/java_vm_ext.cc:470]   at com.mrpoid.core.Emulator.vm_loadMrp(Native method)
+                                                              art/runtime/java_vm_ext.cc:470]   at com.mrpoid.core.Emulator.start(Emulator.java:382)
+                                                              art/runtime/java_vm_ext.cc:470]   at com.mrpoid.app.EmulatorActivity.onCreate(EmulatorActivity.java:270)
+                                                              art/runtime/java_vm_ext.cc:470]   at android.app.Activity.performCreate(Activity.java:6910)
+                                                              art/runtime/java_vm_ext.cc:470]   at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1123)
+                                                              art/runtime/java_vm_ext.cc:470]   at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2746)
+                                                              art/runtime/java_vm_ext.cc:470]   at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2864)
+                                                              art/runtime/java_vm_ext.cc:470]   at android.app.ActivityThread.-wrap12(ActivityThread.java:-1)
+                                                              art/runtime/java_vm_ext.cc:470]   at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1567)
+                                                              art/runtime/java_vm_ext.cc:470]   at android.os.Handler.dispatchMessage(Handler.java:105)
+                                                              art/runtime/java_vm_ext.cc:470]   at android.os.Looper.loop(Looper.java:156)
+                                                              art/runtime/java_vm_ext.cc:470]   at android.app.ActivityThread.main(ActivityThread.java:6523)
+                                                              art/runtime/java_vm_ext.cc:470]   at java.lang.reflect.Method.invoke!(Native method)
+                                                              art/runtime/java_vm_ext.cc:470]   at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:941)
+                                                              art/runtime/java_vm_ext.cc:470]   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:831)
+                                                              art/runtime/java_vm_ext.cc:470]   at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:107)
+                                                              art/runtime/java_vm_ext.cc:470]
+04-07 10:20:49.693 2115-2115/mrper.formatfa.mrper:app0 A/art: art/runtime/runtime.cc:404] Runtime aborting...
+                                                              art/runtime/runtime.cc:404] Aborting thread:
+                                                              art/runtime/runtime.cc:404] "main" prio=5 tid=1 Native
+                                                              art/runtime/runtime.cc:404]   | group="" sCount=0 dsCount=0 obj=0x76def560 self=0xe8685400
+                                                              art/runtime/runtime.cc:404]   | sysTid=2115 nice=0 cgrp=default sched=1073741825/1 handle=0xeb467534
+                                                              art/runtime/runtime.cc:404]   | state=R schedstat=( 173483840 1537500 375 ) utm=10 stm=7 core=7 HZ=100
+                                                              art/runtime/runtime.cc:404]   | stack=0xff71d000-0xff71f000 stackSize=8MB
+                                                              art/runtime/runtime.cc:404]   | held mutexes= "abort lock"
+                                                              art/runtime/runtime.cc:404]   native: #00 pc 003577e5  /system/lib/libart.so (_ZN3art15DumpNativeStackERNSt3__113basic_ostreamIcNS0_11char_traitsIcEEEEiP12BacktraceMapPKcPNS_9ArtMethodEPv+128)
+                                                              art/runtime/runtime.cc:404]   native: #01 pc 00337dc1  /system/lib/libart.so (_ZNK3art6Thread9DumpStackERNSt3__113basic_ostreamIcNS1_11char_traitsIcEEEEbP12BacktraceMap+304)
+                                                              art/runtime/runtime.cc:404]   native: #02 pc 0032adbd  /system/lib/libart.so (_ZNK3art10AbortState10DumpThreadERNSt3__113basic_ostreamIcNS1_11char_traitsIcEEEEPNS_6ThreadE+24)
+                                                              art/runtime/runtime.cc:404]   native: #03 pc 0032ac45  /system/lib/libart.so (_ZNK3art10AbortState4DumpERNSt3__113basic_ostreamIcNS1_11char_traitsIcEEEE+424)
+                                                              art/runtime/runtime.cc:404]   native: #04 pc 0031f267  /system/lib/libart.so (_ZN3art7Runtime5AbortEv+90)
+                                                              art/runtime/runtime.cc:404]   native: #05 pc 000b60d7  /system/lib/libart.so (_ZN3art10LogMessageD2Ev+898)
+                                                              art/runtime/runtime.cc:404]   native: #06 pc 0023bd45  /system/lib/libart.so (_ZN3art9JavaVMExt8JniAbortEPKcS2_+1584)
+                                                              art/runtime/runtime.cc:404]   native: #07 pc 0023bf9b  /system/lib/libart.so (_ZN3art9JavaVMExt9JniAbortVEPKcS2_St9__va_list+58)
+                                                              art/runtime/runtime.cc:404]   native: #08 pc 000cbbb3  /system/lib/libart.so (_ZN3art11ScopedCheck6AbortFEPKcz+42)
+                                                              art/runtime/runtime.cc:404]   native: #09 pc 000cb7a3  /system/lib/libart.so (_ZN3art11ScopedCheck11CheckThreadEP7_JNIEnv+362)
+                                                              art/runtime/runtime.cc:404]   native: #10 pc 000ca7b7  /system/lib/libart.so (_ZN3art11ScopedCheck22CheckPossibleHeapValueERNS_18ScopedObjectAccessEcNS_12JniValueTypeE+26)
+                                                              art/runtime/runtime.cc:404]   native: #11 pc 000c9c89  /system/lib/libart.so (_ZN3art11ScopedCheck5CheckERNS_18ScopedObjectAccessEbPKcPNS_12JniValueTypeE+800)
+                                                              art/runtime/runtime.cc:404]   native: #12 pc 000cf17b  /system/lib/libart.so (_ZN3art8CheckJNI8GetFieldEPKcP7_JNIEnvP8_jobjectP9_jfieldIDbNS_9Primitive4TypeE+498)
+                                                              art/runtime/runtime.cc:404]   native: #13 pc 000c42db  /system/lib/libart.so (_ZN3art8CheckJNI11GetIntFieldEP7_JNIEnvP8_jobjectP9_jfieldID+38)
+                                                              art/runtime/runtime.cc:404]   native: #14 pc 000091bb  /data/app/mrper.formatfa.mrper-2/lib/arm/libmrpoid.so (emu_measureChar+86)
+                                                              art/runtime/runtime.cc:404]   native: #15 pc 0000aa89  /data/app/mrper.formatfa.mrper-2/lib/arm/libmrpoid.so (mr_getCharBitmap+24)
+                                                              art/runtime/runtime.cc:404]   native: #16 pc 00017fb3  [anon:libc_malloc] (???)
+                                                              art/runtime/runtime.cc:404]   at com.mrpoid.core.Emulator.vm_loadMrp(Native method)
+                                                              art/runtime/runtime.cc:404]   at com.mrpoid.core.Emulator.start(Emulator.java:382)
+                                                              art/runtime/runtime.cc:404]   at com.mrpoid.app.EmulatorActivity.onCreate(EmulatorActivity.java:270)
+                                                              art/runtime/runtime.cc:404]   at android.app.Activity.performCreate(Activity.java:6910)
+                                                              art/runtime/runtime.cc:404]   at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1123)
+                                                              art/runtime/runtime.cc:404]   at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2746)
+                                                              art/runtime/runtime.cc:404]   at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2864)
+                                                              art/runtime/runtime.cc:404]   at android.app.ActivityThread.-wrap12(ActivityThread.java:-1)
+                                                              art/runtime/runtime.cc:404]   at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1567)
+                                                              art/runtime/runtime.cc:404]   at android.os.Handler.dispatchMessage(Handler.java:105)
+                                                              art/runtime/runtime.cc:404]   at android.os.Looper.loop(Looper.java:156)
+                                                              art/runtime/runtime.cc:404]   at android.app.ActivityThread.main(ActivityThread.java:6523)
+                                                              art/runtime/runtime.cc:404]   at java.lang.reflect.Method.invoke!(Native method)
+                                                              art/runtime/runtime.cc:404]   at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:941)
+                                                              art/runtime/runtime.cc:404]   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:831)
+                                                              art/runtime/runtime.cc:404]   at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:107)
+                                                              art/runtime/runtime.cc:404] Pending exception java.lang.StackOverflowError: stack size 8MB
+                                                              art/runtime/runtime.cc:404]   at int com.mrpoid.core.Emulator.vm_loadMrp(java.lang.String) (Emulator.java:-2)
+                                                              art/runtime/runtime.cc:404]   at void com.mrpoid.core.Emulator.start() (Emulator.java:382)
+                                                              art/runtime/runtime.cc:404]   at void com.mrpoid.app.EmulatorActivity.onCreate(android.os.Bundle) (EmulatorActivity.java:270)
+                                                              art/runtime/runtime.cc:404]   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:6910)
+                                                              art/runtime/runtime.cc:404]   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1123)
+                                                              art/runtime/runtime.cc:404]   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2746)
+                                                              art/runtime/runtime.cc:404]   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2864)
+                                                              art/runtime/runtime.cc:404]   at void android.app.ActivityThread.-wrap12(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+                                                              art/runtime/runtime.cc:404]   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1567)
+                                                              art/runtime/runtime.cc:404]   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:105)
+                                                              art/runtime/runtime.cc:404]   at void android.os.Looper.loop() (Looper.java:156)
+                                                              art/runtime/runtime.cc:404]   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6523)
+                                                              art/runtime/runtime.cc:404]   at java.lang.Object java.lang.reflect.Method.invoke!(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+                                                              art/runtime/runtime.cc:404]   at void com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run() (ZygoteInit.java:941)
+                                                              art/runtime/runtime.cc:404]   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:831)
+                                                              art/runtime/runtime.cc:404]   at void de.robv.android.xposed.XposedBridge.main(java.lang.String[]) (XposedBridge.java:107)
+                                                              art/runtime/runtime.cc:404] Dumping all threads without appropriate locks held: thread list lock mutator lock
+                                                              art/runtime/runtime.cc:404] All threads:
+                                                              art/runtime/runtime.cc:404] DALVIK THREADS (13):
+                                                              art/runtime/runtime.cc:404] "main" prio=5 tid=1 Runnable
+                                                              art/runtime/runtime.cc:404]   | group="" sCount=0 dsCount=0 obj=0x76def560 self=0xe8685400
+                                                              art/runtime/runtime.cc:404]   | sysTid=2115 nice=0 cgrp=default sched=1073741825/1 handle=0xeb467534
+                                                              art/runtime/runtime.cc:404]   | state=R schedstat=( 193478111 1537500 375 ) utm=12 stm=7 core=7 HZ=100
+                                                              art/runtime/runtime.cc:404]   | stack=0xff71d000-0xff71f000 stackSize=8MB
+                                                              art/runtime/runtime.cc:404]   | held mutexes= "abort lock" "mutator lock"(shared held)
+                                                              art/runtime/runtime.cc:404]   native: #00 pc 003577e5  /system/lib/libart.so (_ZN3art15DumpNativeStackERNSt3__113basic_ostreamIcNS0_11char_traitsIcEEEEiP12BacktraceMapPKcPNS_9ArtMethodEPv+128)
+                                                              art/runtime/runtime.cc:404]   native: #01 pc 00337dc1  /system/lib/libart.so (_ZNK3art6Thread9DumpStackERNSt3__113basic_ostreamIcNS1_11char_traitsIcEEEEbP12BacktraceMap+304)
+                                                              art/runtime/runtime.cc:404]   native: #02 pc 00349dd3  /system/lib/libart.so (_ZN3art14DumpCheckpoint3RunEPNS_6ThreadE+622)
+                                                              art/runtime/runtime.cc:404]   native: #03 pc 00343d61  /system/lib/libart.so (_ZN3art10ThreadList13RunCheckpointEPNS_7ClosureE+336)
+                                                              art/runtime/runtime.cc:404]   native: #04 pc 00343a81  /system/lib/libart.so (_ZN3art10ThreadList4DumpERNSt3__113basic_ostreamIcNS1_11char_traitsIcEEEEb+180)
+                                                              art/runtime/runtime.cc:404]   native: #05 pc 0032ac11  /system/lib/libart.so (_ZNK3art10AbortState4DumpERNSt3__113basic_ostreamIcNS1_11char_traitsIcEEEE+372)
+                                                              art/runtime/runtime.cc:404]   native: #06 pc 0031f267  /system/lib/libart.so (_ZN3art7Runtime5AbortEv+90)
+                                                              art/runtime/runtime.cc:404]   native: #07 pc 000b60d7  /system/lib/libart.so (_ZN3art10LogMessageD2Ev+898)
+                                                              art/runtime/runtime.cc:404]   native: #08 pc 0023bd45  /system/lib/libart.so (_ZN3art9JavaVMExt8JniAbortEPKcS2_+1584)
+                                                              art/runtime/runtime.cc:404]   native: #09 pc 0023bf9b  /system/lib/libart.so (_ZN3art9JavaVMExt9JniAbortVEPKcS2_St9__va_list+58)
+                                                              art/runtime/runtime.cc:404]   native: #10 pc 000cbbb3  /system/lib/libart.so (_ZN3art11ScopedCheck6AbortFEPKcz+42)
+                                                              art/runtime/runtime.cc:404]   native: #11 pc 000cb7a3  /system/lib/libart.so (_ZN3art11ScopedCheck11CheckThreadEP7_JNIEnv+362)
+                                                              art/runtime/runtime.cc:404]   native: #12 pc 000ca7b7  /system/lib/libart.so (_ZN3art11ScopedCheck22CheckPossibleHeapValueERNS_18ScopedObjectAccessEcNS_12JniValueTypeE+26)
+                                                              art/runtime/runtime.cc:404]   native: #13 pc 000c9c89  /system/lib/libart.so (_ZN3art11ScopedCheck5CheckERNS_18ScopedObjectAccessEbPKcPNS_12JniValueTypeE+800)
+                                                              art/runtime/runtime.cc:404]   native: #14 pc 000cf17b  /system/lib/libart.so (_ZN3art8CheckJNI8GetFieldEPKcP7_JNIEnvP8_jobjectP9_jfieldIDbNS_9Primitive4TypeE+498)
+                                                              art/runtime/runtime.cc:404]   native: #15 pc 000c42db  /system/lib/libart.so (_ZN3art8CheckJNI11GetIntFieldEP7_JNIEnvP8_jobjectP9_jfieldID+38)
+                                                              art/runtime/runtime.cc:404]   native: #16 pc 000091bb  /data/app/mrper.formatfa.mrper-2/lib/arm/libmrpoid.so (emu_measureChar+86)
+                                                              art/runtime/runtime.cc:404]   native: #17 pc 0000aa89  /data/app/mrper.formatfa.mrper-2/lib/arm/libmrpoid.so (mr_getCharBitmap+24)
+                                                              art/runtime/runtime.cc:404]   native: #18 pc 00017fb3  [anon:libc_malloc] (???)
+                                                              art/runtime/runtime.cc:404]   at com.mrpoid.core.Emulator.vm_loadMrp(Native method)
+                                                              art/runtime/runtime.cc:404]   at com.mrpoid.core.Emulator.start(Emulator.java:382)
+                                                              art/runtime/runtime.cc:404]   at com.mrpoid.app.EmulatorActivity.onCreate(EmulatorActivity.java:270)
+                                                              art/runtime/runtime.cc:404]   at android.app.Activity.performCreate(Activity.java:6910)
+                                                              art/runtime/runtime.cc:404]   at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1123)
+                                                              art/runtime/runtime.cc:404]   at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2746)
+                                                              art/runtime/runtime.cc:404]   at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2864)
+                                                              art/runtime/runtime.cc:404]   at android.app.ActivityThread.-wrap12(ActivityThread.java:-1)
+                                                              art/runtime/runtime.cc:404]   at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1567)
+                                                              art/runtime/runtime.cc:404]   at android.os.Handler.dispatchMessage(Handler.java:105)
+                                                              art/runtime/runtime.cc:404]   at android.os.Looper.loop(Looper.java:156)
+                                                              art/runtime/runtime.cc:404]   at android.app.ActivityThread.main(ActivityThread.java:6523)
+                                                              art/runtime/runtime.cc:404]   at java.lang.reflect.Method.invoke!(Native method)
+                                                              art/runtime/runtime.cc:404]   at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:941)
+                                                              art/runtime/runtime.cc:404]   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:831)
+                                                              art/runtime/runtime.cc:404]   at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:107)
+                                                              art/runtime/runtime.cc:404]
+                                                              art/runtime/runtime.cc:404] "Jit thread pool worker thread 0" prio=5 tid=2 Native (still starting up)
+                                                              art/runtime/runtime.cc:404]   | group="" sCount=1 dsCount=0 obj=0x0 self=0xe110f000
+                                                              art/runtime/runtime.cc:404]   | sysTid=2122 nice=9 cgrp=default sched=0/0 handle=0xe7d9b920
+                                                              art/runtime/runtime.cc:404]   | state=S schedstat=( 341668 14062 3 ) utm=0 stm=0 core=6 HZ=100
+                                                              art/runtime/runtime.cc:404]   | stack=0xe7c9d000-0xe7c9f000 stackSize=1022KB
+                                                              art/runtime/runtime.cc:404]   | held mutexes=
+                                                              art/runtime/runtime.cc:404]   kernel: __switch_to+0x74/0x8c
+                                                              art/runtime/runtime.cc:404]   kernel: futex_wait_queue_me+0xdc/0x168
+                                                              art/runtime/runtime.cc:404]   kernel: futex_wait+0xf0/0x244
+                                                              art/runtime/runtime.cc:404]   kernel: do_futex+0x168/0xa64
+                                                              art/runtime/runtime.cc:404]   kernel: compat_SyS_futex+0x7c/0x15c
+                                                              art/runtime/runtime.cc:404]   kernel: el0_svc_naked+0x24/0x28
+                                                              art/runtime/runtime.cc:404]   native: #00 pc 000174b4  /system/lib/libc.so (syscall+28)
+                                                              art/runtime/runtime.cc:404]   native: #01 pc 000b7cd1  /system/lib/libart.so (_ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+92)
+                                                              art/runtime/runtime.cc:404]   native: #02 pc 0034b333  /system/lib/libart.so (_ZN3art10ThreadPool7GetTaskEPNS_6ThreadE+170)
+                                                              art/runtime/runtime.cc:404]   native: #03 pc 0034ab57  /system/lib/libart.so (_ZN3art16ThreadPoolWorker3RunEv+62)
+                                                              art/runtime/runtime.cc:404]   native: #04 pc 0034a67d  /system/lib/libart.so (_ZN3art16ThreadPoolWorker8CallbackEPv+64)
+04-07 10:20:49.694 2115-2115/mrper.formatfa.mrper:app0 A/art: art/runtime/runtime.cc:404]   native: #05 pc 00047983  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+                                                              art/runtime/runtime.cc:404]   native: #06 pc 00019efd  /system/lib/libc.so (__start_thread+6)
+                                                              art/runtime/runtime.cc:404]   (no managed stack frames)
+                                                              art/runtime/runtime.cc:404]
+                                                              art/runtime/runtime.cc:404] "Signal Catcher" prio=5 tid=3 WaitingInMainSignalCatcherLoop
+                                                              art/runtime/runtime.cc:404]   | group="" sCount=1 dsCount=0 obj=0x12c15f70 self=0xd9922200
+                                                              art/runtime/runtime.cc:404]   | sysTid=2123 nice=0 cgrp=default sched=0/0 handle=0xe7c9a920
+                                                              art/runtime/runtime.cc:404]   | state=S schedstat=( 482813 4167 2 ) utm=0 stm=0 core=4 HZ=100
+                                                              art/runtime/runtime.cc:404]   | stack=0xe7b9e000-0xe7ba0000 stackSize=1014KB
+                                                              art/runtime/runtime.cc:404]   | held mutexes=
+                                                              art/runtime/runtime.cc:404]   kernel: __switch_to+0x74/0x8c
+                                                              art/runtime/runtime.cc:404]   kernel: do_sigtimedwait+0x15c/0x244
+                                                              art/runtime/runtime.cc:404]   kernel: compat_SyS_rt_sigtimedwait+0x8c/0xe8
+                                                              art/runtime/runtime.cc:404]   kernel: el0_svc_naked+0x24/0x28
+                                                              art/runtime/runtime.cc:404]   native: #00 pc 00049170  /system/lib/libc.so (__rt_sigtimedwait+12)
+                                                              art/runtime/runtime.cc:404]   native: #01 pc 0001e2fb  /system/lib/libc.so (sigwait+34)
+                                                              art/runtime/runtime.cc:404]   native: #02 pc 0032ddc3  /system/lib/libart.so (_ZN3art9SignalSet4WaitEv+22)
+                                                              art/runtime/runtime.cc:404]   native: #03 pc 0032d9bd  /system/lib/libart.so (_ZN3art13SignalCatcher13WaitForSignalEPNS_6ThreadERNS_9SignalSetE+168)
+                                                              art/runtime/runtime.cc:404]   native: #04 pc 0032c6dd  /system/lib/libart.so (_ZN3art13SignalCatcher3RunEPv+276)
+                                                              art/runtime/runtime.cc:404]   native: #05 pc 00047983  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+                                                              art/runtime/runtime.cc:404]   native: #06 pc 00019efd  /system/lib/libc.so (__start_thread+6)
+                                                              art/runtime/runtime.cc:404]   (no managed stack frames)
+                                                              art/runtime/runtime.cc:404]
+                                                              art/runtime/runtime.cc:404] "JDWP" prio=5 tid=4 WaitingInMainDebuggerLoop
+                                                              art/runtime/runtime.cc:404]   | group="" sCount=1 dsCount=0 obj=0x12c190d0 self=0xe1110400
+                                                              art/runtime/runtime.cc:404]   | sysTid=2124 nice=0 cgrp=default sched=0/0 handle=0xe7b9b920
+                                                              art/runtime/runtime.cc:404]   | state=S schedstat=( 2116668 42188 8 ) utm=0 stm=0 core=5 HZ=100
+                                                              art/runtime/runtime.cc:404]   | stack=0xe7a9f000-0xe7aa1000 stackSize=1014KB
+                                                              art/runtime/runtime.cc:404]   | held mutexes=
+                                                              art/runtime/runtime.cc:404]   kernel: __switch_to+0x74/0x8c
+                                                              art/runtime/runtime.cc:404]   kernel: poll_schedule_timeout+0x40/0x6c
+                                                              art/runtime/runtime.cc:404]   kernel: do_select+0x534/0x5d4
+                                                              art/runtime/runtime.cc:404]   kernel: compat_core_sys_select+0x18c/0x21c
+                                                              art/runtime/runtime.cc:404]   kernel: compat_SyS_pselect6+0x268/0x288
+                                                              art/runtime/runtime.cc:404]   kernel: el0_svc_naked+0x24/0x28
+                                                              art/runtime/runtime.cc:404]   native: #00 pc 00049048  /system/lib/libc.so (__pselect6+20)
+                                                              art/runtime/runtime.cc:404]   native: #01 pc 0001d0f5  /system/lib/libc.so (select+88)
+                                                              art/runtime/runtime.cc:404]   native: #02 pc 00403d23  /system/lib/libart.so (_ZN3art4JDWP12JdwpAdbState15ProcessIncomingEv+302)
+                                                              art/runtime/runtime.cc:404]   native: #03 pc 0024b0fb  /system/lib/libart.so (_ZN3art4JDWP9JdwpState3RunEv+654)
+                                                              art/runtime/runtime.cc:404]   native: #04 pc 0024a89b  /system/lib/libart.so (_ZN3art4JDWPL15StartJdwpThreadEPv+22)
+                                                              art/runtime/runtime.cc:404]   native: #05 pc 00047983  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+                                                              art/runtime/runtime.cc:404]   native: #06 pc 00019efd  /system/lib/libc.so (__start_thread+6)
+                                                              art/runtime/runtime.cc:404]   (no managed stack frames)
+                                                              art/runtime/runtime.cc:404]
+                                                              art/runtime/runtime.cc:404] "ReferenceQueueDaemon" prio=5 tid=5 Waiting
+                                                              art/runtime/runtime.cc:404]   | group="" sCount=1 dsCount=0 obj=0x12c19160 self=0xd9923b00
+                                                              art/runtime/runtime.cc:404]   | sysTid=2127 nice=0 cgrp=default sched=0/0 handle=0xe7a9c920
+                                                              art/runtime/runtime.cc:404]   | state=S schedstat=( 919790 0 6 ) utm=0 stm=0 core=1 HZ=100
+                                                              art/runtime/runtime.cc:404]   | stack=0xe799a000-0xe799c000 stackSize=1038KB
+                                                              art/runtime/runtime.cc:404]   | held mutexes=
+                                                              art/runtime/runtime.cc:404]   kernel: __switch_to+0x74/0x8c
+                                                              art/runtime/runtime.cc:404]   kernel: futex_wait_queue_me+0xdc/0x168
+                                                              art/runtime/runtime.cc:404]   kernel: futex_wait+0xf0/0x244
+                                                              art/runtime/runtime.cc:404]   kernel: do_futex+0x168/0xa64
+                                                              art/runtime/runtime.cc:404]   kernel: compat_SyS_futex+0x7c/0x15c
+04-07 10:20:49.694 2115-2115/? A/art: art/runtime/runtime.cc:404]   kernel: el0_svc_naked+0x24/0x28
+                                      art/runtime/runtime.cc:404]   native: #00 pc 000174b4  /system/lib/libc.so (syscall+28)
+                                      art/runtime/runtime.cc:404]   native: #01 pc 000b7cd1  /system/lib/libart.so (_ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+92)
+                                      art/runtime/runtime.cc:404]   native: #02 pc 002a2461  /system/lib/libart.so (_ZN3art7Monitor4WaitEPNS_6ThreadExibNS_11ThreadStateE+512)
+                                      art/runtime/runtime.cc:404]   native: #03 pc 002a3be7  /system/lib/libart.so (_ZN3art7Monitor4WaitEPNS_6ThreadEPNS_6mirror6ObjectExibNS_11ThreadStateE+258)
+                                      art/runtime/runtime.cc:404]   native: #04 pc 002b2353  /system/lib/libart.so (_ZN3artL11Object_waitEP7_JNIEnvP8_jobject+32)
+                                      art/runtime/runtime.cc:404]   native: #05 pc 00000537  /data/dalvik-cache/arm/system@framework@boot.oat (Java_java_lang_Object_wait__+74)
+                                      art/runtime/runtime.cc:404]   at java.lang.Object.wait!(Native method)
+                                      art/runtime/runtime.cc:404]   - waiting on <0x0569e492> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+                                      art/runtime/runtime.cc:404]   at java.lang.Daemons$ReferenceQueueDaemon.run(Daemons.java:150)
+                                      art/runtime/runtime.cc:404]   - locked <0x0569e492> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+                                      art/runtime/runtime.cc:404]   at java.lang.Thread.run(Thread.java:776)
+                                      art/runtime/runtime.cc:404]
+                                      art/runtime/runtime.cc:404] "FinalizerDaemon" prio=5 tid=6 Waiting
+                                      art/runtime/runtime.cc:404]   | group="" sCount=1 dsCount=0 obj=0x12c191f0 self=0xe8685e00
+                                      art/runtime/runtime.cc:404]   | sysTid=2128 nice=0 cgrp=default sched=0/0 handle=0xe7997920
+                                      art/runtime/runtime.cc:404]   | state=S schedstat=( 1075001 4819271 16 ) utm=0 stm=0 core=2 HZ=100
+                                      art/runtime/runtime.cc:404]   | stack=0xe7895000-0xe7897000 stackSize=1038KB
+                                      art/runtime/runtime.cc:404]   | held mutexes=
+                                      art/runtime/runtime.cc:404]   kernel: __switch_to+0x74/0x8c
+                                      art/runtime/runtime.cc:404]   kernel: futex_wait_queue_me+0xdc/0x168
+                                      art/runtime/runtime.cc:404]   kernel: futex_wait+0xf0/0x244
+                                      art/runtime/runtime.cc:404]   kernel: do_futex+0x168/0xa64
+                                      art/runtime/runtime.cc:404]   kernel: compat_SyS_futex+0x7c/0x15c
+                                      art/runtime/runtime.cc:404]   kernel: el0_svc_naked+0x24/0x28
+                                      art/runtime/runtime.cc:404]   native: #00 pc 000174b4  /system/lib/libc.so (syscall+28)
+                                      art/runtime/runtime.cc:404]   native: #01 pc 000b7cd1  /system/lib/libart.so (_ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+92)
+                                      art/runtime/runtime.cc:404]   native: #02 pc 002a2461  /system/lib/libart.so (_ZN3art7Monitor4WaitEPNS_6ThreadExibNS_11ThreadStateE+512)
+                                      art/runtime/runtime.cc:404]   native: #03 pc 002a3be7  /system/lib/libart.so (_ZN3art7Monitor4WaitEPNS_6ThreadEPNS_6mirror6ObjectExibNS_11ThreadStateE+258)
+                                      art/runtime/runtime.cc:404]   native: #04 pc 002b237f  /system/lib/libart.so (_ZN3artL13Object_waitJIEP7_JNIEnvP8_jobjectxi+36)
+                                      art/runtime/runtime.cc:404]   native: #05 pc 00000635  /data/dalvik-cache/arm/system@framework@boot.oat (Java_java_lang_Object_wait__JI+96)
+                                      art/runtime/runtime.cc:404]   at java.lang.Object.wait!(Native method)
+                                      art/runtime/runtime.cc:404]   - waiting on <0x0ca6fe63> (a java.lang.Object)
+                                      art/runtime/runtime.cc:404]   at java.lang.Object.wait(Object.java:407)
+                                      art/runtime/runtime.cc:404]   at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:188)
+                                      art/runtime/runtime.cc:404]   - locked <0x0ca6fe63> (a java.lang.Object)
+                                      art/runtime/runtime.cc:404]   at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:209)
+                                      art/runtime/runtime.cc:404]   at java.lang.Daemons$FinalizerDaemon.run(Daemons.java:204)
+                                      art/runtime/runtime.cc:404]   at java.lang.Thread.run(Thread.java:776)
+                                      art/runtime/runtime.cc:404]
+                                      art/runtime/runtime.cc:404] "FinalizerWatchdogDaemon" prio=5 tid=7 Sleeping
+                                      art/runtime/runtime.cc:404]   | group="" sCount=1 dsCount=0 obj=0x12c19280 self=0xe8686300
+                                      art/runtime/runtime.cc:404]   | sysTid=2130 nice=0 cgrp=default sched=0/0 handle=0xe7892920
+                                      art/runtime/runtime.cc:404]   | state=S schedstat=( 145312 13021 6 ) utm=0 stm=0 core=5 HZ=100
+                                      art/runtime/runtime.cc:404]   | stack=0xe7790000-0xe7792000 stackSize=1038KB
+                                      art/runtime/runtime.cc:404]   | held mutexes=
+                                      art/runtime/runtime.cc:404]   kernel: __switch_to+0x74/0x8c
+                                      art/runtime/runtime.cc:404]   kernel: futex_wait_queue_me+0xdc/0x168
+                                      art/runtime/runtime.cc:404]   kernel: futex_wait+0xf0/0x244
+                                      art/runtime/runtime.cc:404]   kernel: do_futex+0x168/0xa64
+                                      art/runtime/runtime.cc:404]   kernel: compat_SyS_futex+0x7c/0x15c
+                                      art/runtime/runtime.cc:404]   kernel: el0_svc_naked+0x24/0x28
+                                      art/runtime/runtime.cc:404]   native: #00 pc 000174b8  /system/lib/libc.so (syscall+32)
+                                      art/runtime/runtime.cc:404]   native: #01 pc 000b80fd  /system/lib/libart.so (_ZN3art17ConditionVariable9TimedWaitEPNS_6ThreadExi+108)
+                                      art/runtime/runtime.cc:404]   native: #02 pc 002a2471  /system/lib/libart.so (_ZN3art7Monitor4WaitEPNS_6ThreadExibNS_11ThreadStateE+528)
+                                      art/runtime/runtime.cc:404]   native: #03 pc 002a3be7  /system/lib/libart.so (_ZN3art7Monitor4WaitEPNS_6ThreadEPNS_6mirror6ObjectExibNS_11ThreadStateE+258)
+                                      art/runtime/runtime.cc:404]   native: #04 pc 002b6fb1  /system/lib/libart.so (_ZN3artL12Thread_sleepEP7_JNIEnvP7_jclassP8_jobjectxi+56)
+                                      art/runtime/runtime.cc:404]   native: #05 pc 00093683  /data/dalvik-cache/arm/system@framework@boot.oat (Java_java_lang_Thread_sleep__Ljava_lang_Object_2JI+126)
+                                      art/runtime/runtime.cc:404]   at java.lang.Thread.sleep!(Native method)
+                                      art/runtime/runtime.cc:404]   - sleeping on <0x082eaa60> (a java.lang.Object)
+                                      art/runtime/runtime.cc:404]   at java.lang.Thread.sleep(Thread.java:379)
+                                      art/runtime/runtime.cc:404]   - locked <0x082eaa60> (a java.lang.Object)
+                                      art/runtime/runtime.cc:404]   at java.lang.Thread.sleep(Thread.java:321)
+                                      art/runtime/runtime.cc:404]   at java.lang.Daemons$FinalizerWatchdogDaemon.sleepFor(Daemons.java:314)
+                                      art/runtime/runtime.cc:404]   at java.lang.Daemons$FinalizerWatchdogDaemon.waitForFinalization(Daemons.java:336)
+                                      art/runtime/runtime.cc:404]   at java.lang.Daemons$FinalizerWatchdogDaemon.run(Daemons.java:253)
+                                      art/runtime/runtime.cc:404]   at java.lang.Thread.run(Thread.java:776)
+                                      art/runtime/runtime.cc:404]
+                                      art/runtime/runtime.cc:404] "HeapTaskDaemon" prio=5 tid=8 Blocked
+                                      art/runtime/runtime.cc:404]   | group="" sCount=1 dsCount=0 obj=0x12c19310 self=0xe8686800
+                                      art/runtime/runtime.cc:404]   | sysTid=2131 nice=0 cgrp=default sched=0/0 handle=0xe778d920
+                                      art/runtime/runtime.cc:404]   | state=S schedstat=( 34632291 65104 13 ) utm=3 stm=0 core=2 HZ=100
+                                      art/runtime/runtime.cc:404]   | stack=0xe768b000-0xe768d000 stackSize=1038KB
+                                      art/runtime/runtime.cc:404]   | held mutexes=
+                                      art/runtime/runtime.cc:404]   kernel: __switch_to+0x74/0x8c
+                                      art/runtime/runtime.cc:404]   kernel: futex_wait_queue_me+0xdc/0x168
+                                      art/runtime/runtime.cc:404]   kernel: futex_wait+0xf0/0x244
+                                      art/runtime/runtime.cc:404]   kernel: do_futex+0x168/0xa64
+                                      art/runtime/runtime.cc:404]   kernel: compat_SyS_futex+0x7c/0x15c
+                                      art/runtime/runtime.cc:404]   kernel: el0_svc_naked+0x24/0x28
+                                      art/runtime/runtime.cc:404]   native: #00 pc 000174b8  /system/lib/libc.so (syscall+32)
+                                      art/runtime/runtime.cc:404]   native: #01 pc 000b80fd  /system/lib/libart.so (_ZN3art17ConditionVariable9TimedWaitEPNS_6ThreadExi+108)
+                                      art/runtime/runtime.cc:404]   native: #02 pc 001b74b9  /system/lib/libart.so (_ZN3art2gc13TaskProcessor7GetTaskEPNS_6ThreadE+228)
+                                      art/runtime/runtime.cc:404]   native: #03 pc 001b7b69  /system/lib/libart.so (_ZN3art2gc13TaskProcessor11RunAllTasksEPNS_6ThreadE+44)
+                                      art/runtime/runtime.cc:404]   native: #04 pc 00260def  /data/dalvik-cache/arm/system@framework@boot-core-libart.oat (Java_dalvik_system_VMRuntime_runHeapTasks__+74)
+                                      art/runtime/runtime.cc:404]   at dalvik.system.VMRuntime.runHeapTasks(Native method)
+                                      art/runtime/runtime.cc:404]   - waiting to lock an unknown object
+                                      art/runtime/runtime.cc:404]   at java.lang.Daemons$HeapTaskDaemon.run(Daemons.java:433)
+                                      art/runtime/runtime.cc:404]   at java.lang.Thread.run(Thread.java:776)
+                                      art/runtime/runtime.cc:404]
+                                      art/runtime/runtime.cc:404] "Binder:2115_1" prio=5 tid=9 Native
+                                      art/runtime/runtime.cc:404]   | group="" sCount=1 dsCount=0 obj=0x12c19430 self=0xe8686d00
+                                      art/runtime/runtime.cc:404]   | sysTid=2132 nice=0 cgrp=default sched=0/0 handle=0xe758a920
+                                      art/runtime/runtime.cc:404]   | state=S schedstat=( 3207291 0 12 ) utm=0 stm=0 core=5 HZ=100
+                                      art/runtime/runtime.cc:404]   | stack=0xe748e000-0xe7490000 stackSize=1014KB
+                                      art/runtime/runtime.cc:404]   | held mutexes=
+                                      art/runtime/runtime.cc:404]   kernel: __switch_to+0x74/0x8c
+04-07 10:20:49.695 2115-2115/? A/art: art/runtime/runtime.cc:404]   kernel: binder_thread_read+0xd10/0x1548
+                                      art/runtime/runtime.cc:404]   kernel: binder_ioctl+0x9a0/0xcdc
+                                      art/runtime/runtime.cc:404]   kernel: compat_SyS_ioctl+0xb0/0x1114
+                                      art/runtime/runtime.cc:404]   kernel: el0_svc_naked+0x24/0x28
+04-07 10:20:49.696 2115-2115/? A/libc: Fatal signal 6 (SIGABRT), code -6 in tid 2115 (atfa.mrper:app0)

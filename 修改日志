@@ -1,0 +1,10 @@
+1.点击切换键盘闪退
+01-21 14:46:43.629 25640-25640/mrper.formatfa.mrper:app0 E/AndroidRuntime: FATAL EXCEPTION: main
+                                                                           java.lang.NullPointerException
+                                                                               at com.mrpoid.core.MrpRunner.getResources(MrpRunner.java:62)
+                                                                               at com.mrpoid.game.keypad.Keypad.initButtonSize(Keypad.java:221)
+MrpRunner的gContext为null
+决解：在EmulatorActivity的onCreate加入MrpRunner.init1(this);
+
+2.mrp传入文件时复制到vm目录的逻辑修改,见
+Emulator.java的public void setRunMrp(String path) {方法

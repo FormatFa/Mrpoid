@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Mrper</string>
+    <string name="draweropen">Open</string>
+    <string name="drawerclose">Close</string>
+    <string name="title_activity_about">关于</string>
+</resources>
