@@ -65,7 +65,8 @@ public final class MrpRunner {
 	public static void init1(Context context) {
 		EmuLog.d("", "EmulatorApplication create! pid=" + Process.myPid());
 		
-		gContext = context.getApplicationContext();
+		gContext = context;
+				//.getApplicationContext();
 	}
 	
 	/**
@@ -88,10 +89,16 @@ public final class MrpRunner {
 		gContext = context;
       //  init1(context);
 		EmuLog.i(TAG, "startMrp(" + mrpPath + ")");
-		
+
+		Intent intent = new Intent(EmulatorService.ACTION_STARTMRP);
+		intent.setClassName(context, "com.mrpoid.apps.AppService" + 0);
+		intent.putExtra(INTENT_KEY_ENTRY_MRP, mrpPath);
+		intent.putExtra(INTENT_KEY_ENTRY_ACTIVITY, context.getClass().getName());
+
+		context.getApplicationContext().startService(intent);
 		if (manager == null)
 			manager = new AppProcessManager(context, "com.mrpoid.apps.AppService", 5);
-		
+
 		manager.requestIdleProcess(defProcIndex, foce, mrpPath, new RequestCallback() {
 			
 			@Override
@@ -108,13 +115,7 @@ public final class MrpRunner {
 				} else */
 				{
 //					UIUtils.ToastMessage(context, "进程获取成功 " + procIndex);
-					
-					Intent intent = new Intent(EmulatorService.ACTION_STARTMRP);
-					intent.setClassName(context, "com.mrpoid.apps.AppService" + procIndex);
-					intent.putExtra(INTENT_KEY_ENTRY_MRP, mrpPath);
-					intent.putExtra(INTENT_KEY_ENTRY_ACTIVITY, context.getClass().getName());
-					
-					context.getApplicationContext().startService(intent);
+
 				}
 			}
 			

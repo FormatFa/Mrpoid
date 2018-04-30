@@ -143,10 +143,13 @@ int32 mr_getUserInfo(mr_userinfo* info)
 	if (info == NULL)
 		return MR_FAILED;
 
-//	if(showApiLog) LOGI("mr_getUserInfo");
+
 
 	memset(info, 0x00, sizeof(mr_userinfo));
+
+
 	memcpy(info->IMEI, dsmIMEI, 15);
+
 	memcpy(info->IMSI, dsmIMSI, 15);
 
 //	strncpy(info->manufactory, "aux", 3);
@@ -175,7 +178,8 @@ int32 mr_getUserInfo(mr_userinfo* info)
 	LOGI("ver = %d",info->ver);
 #endif
 
-//	LOGI("mr_getUserInfo suc!");
+
+    LOGE("mr_getUserInfo suc!");
 
 	return MR_SUCCESS;
 }
@@ -287,7 +291,7 @@ int32 mr_mem_get(char** mem_base, uint32* mem_len){
 	gEmulatorParams.vm_mem_len = len;
 
 	if(showApiLog) 
-		LOGI("mr_mem_get addr:0x%p len:%d", (void *)buffer, len);
+		LOGI("mr_mem_get addr:0x%p len:%d,end:%p", (void *)buffer,len, (int)buffer+len);
 
 	return MR_SUCCESS;
 }
@@ -658,6 +662,7 @@ static void dsmToLaunchDir(void)
 ****************************************************************************/
 static int32 dsmSwitchPath(uint8* input, int32 input_len, uint8** output, int32* output_len)
 {
+
 	if(input ==  NULL)
 		return MR_FAILED;
 
@@ -752,6 +757,7 @@ static int32 dsmSwitchPath(uint8* input, int32 input_len, uint8** output, int32*
 			break;
 		}
 	}
+
 
 	return MR_SUCCESS;
 }
@@ -1379,6 +1385,7 @@ void mr_call(char *number){
 }
 
 int32 mr_getNetworkID(void){
+
 	if(showApiLog) LOGI("mr_getNetworkID %d", dsmNetWorkID);
 	return dsmNetWorkID;
 }

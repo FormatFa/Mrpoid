@@ -12,6 +12,12 @@ android {
             abiFilters "armeabi"
 
             }
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+               arguments  "-DANDROID_ALLOW_UNDEFINED_SYMBOLS=TRUE"
+            }
+        }
     }
 
     buildTypes {
@@ -21,7 +27,7 @@ android {
         }
         debug {
                     jniDebuggable true
-                    jniDebuggable = true
+
                 }
         sourceSets {
             main {
@@ -35,8 +41,8 @@ android {
 
 
     externalNativeBuild {
-        ndkBuild {
-            path 'src/main/jni/Android.mk'
+        cmake {
+            path "CMakeLists.txt"
         }
     }
 }

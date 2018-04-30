@@ -27,6 +27,7 @@ import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.widget.Toast;
 
 import com.mrpoid.R;
 
@@ -55,6 +56,7 @@ public class EmuSurface extends SurfaceView implements SurfaceHolder.Callback, H
 	public boolean handleMessage(Message msg) {
 		switch (msg.what) {
 		case MSG_DRAW: {// 刷屏
+			Toast.makeText(emulator.getActivity(),"Draw", Toast.LENGTH_SHORT).show();
 			myDraw();
 			break;
 		}

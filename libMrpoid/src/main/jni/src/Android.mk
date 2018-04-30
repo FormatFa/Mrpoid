@@ -29,7 +29,7 @@ LOCAL_SRC_FILES := emulator.c \
 
 include $(BUILD_SHARED_LIBRARY)
 
-
+CHECK_JNI_EXIT
 #编译完整虚拟机###############
 include $(CLEAR_VARS)
 

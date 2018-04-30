@@ -16,6 +16,8 @@
 package com.mrpoid.core;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -31,6 +33,7 @@ import android.graphics.Rect;
 import android.graphics.RectF;
 import android.graphics.Typeface;
 import android.os.Environment;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.widget.Toast;
@@ -164,6 +167,7 @@ public class MrpScreen {
 	boolean debugDraw = false;
 	
 	public void N2J_drawChar(int c, int x, int y, int color) {
+		Log.e(TAG,"drawChar:"+c);
 		tmpBuf[0] = (char) c; 
 		tmpBuf[1] = 0;
 		
@@ -381,6 +385,12 @@ public class MrpScreen {
 		 * 刷屏非主线程，这里涉及到 bitmap 同时占有的问题，所以先进底层锁住
 		 */
 		//native_lockBitmap();
+		try {
+			Log.d(TAG,"write test");
+			bitmap.compress(Bitmap.CompressFormat.JPEG,90,new FileOutputStream("/sdcard/"+bitmap.toString()+".jpg"));
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
 		canvas.drawBitmap(bitmap, null, region, bmpPaint);
 //		native_unLockBitmap();
 	}

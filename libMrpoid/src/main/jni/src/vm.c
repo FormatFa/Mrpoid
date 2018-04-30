@@ -13,7 +13,9 @@
 #include <message.h>
 #include <mr_plat.h>
 #include <mrporting.h>
-
+#include <unistd.h>
+#include "mythroad/mythroad.h"
+#include "encode.h"
 
 pthread_t 	gvm_therad_id = 0;
 
@@ -31,9 +33,17 @@ static void vm_thread_exit();
 //加载 MRP
 jint vm_loadMrp(JNIEnv * env, jobject self, jstring path)
 {
+
+//    if(1)
+//    {
+//  emu_timerStart(450);
+//        int32 result = emu_timerStart(50);
+//      emu_timerStart(3500);
+//        return 1;
+//    }
 	const char *str = (*env)->GetStringUTFChars(env, path, JNI_FALSE);
 	if(str){
-		LOGD("vm_loadMrp entry:%s", str);
+		LOGE("vm_loadMrp entry:%s,pid=%d", str,getpid());
 		UTF8ToGBString(str, runMrpPath, sizeof(runMrpPath));
 
 		b_native_thread = FALSE;
@@ -45,7 +55,9 @@ jint vm_loadMrp(JNIEnv * env, jobject self, jstring path)
 
 		gMainJniEnv = env;
 
+
 		dsm_init();
+
 
 		gEmulatorCfg.b_vm_running = 1;
 
@@ -208,6 +220,7 @@ jint vm_loadMrp_thread(JNIEnv * env, jobject self, jstring path)
 		//set can sendMsg flag
 		b_thread_running = 1;
 
+		LOGE("格格newThread");
 		//启动线程
 		int ret = pthread_create(&gvm_therad_id, NULL, (void *)vm_thread_run, "Hello");
 		if(ret != 0){
@@ -406,7 +419,7 @@ static void vm_loop()
 	{
 		T_MSG *msg = (T_MSG *)dequeue(mQueue);
 
-//		LOGI("get msg{%d,%d,%d,%d}", msg->what, msg->arg0, msg->arg1, msg->arg2);
+		LOGE("get msg{%d,%d,%d,%d}", msg->what, msg->arg0, msg->arg1, msg->arg2);
 
 		switch(msg->what)
 		{

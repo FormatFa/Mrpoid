@@ -18,6 +18,7 @@ package com.mrpoid.app;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.Manifest;
 import android.Manifest.permission;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -30,6 +31,7 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -74,7 +76,7 @@ import com.mrpoid.utils.SdkUtils;
  * 
  * 最后修改：2013-3-14 20:06:44
  */
-public class EmulatorActivity extends Activity implements 
+public class EmulatorActivity extends Activity implements
 		Handler.Callback, MrDefines,
 		OnClickListener{
 	static final String TAG = "EmulatorActivity";
@@ -223,15 +225,20 @@ public class EmulatorActivity extends Activity implements
 		keypad.attachView(padView); //依赖一个 view 来展示
 		keypad.setOnKeyEventListener(mKeyEventListener);
 	}
-	
+	String[] permissions = {Manifest.permission.READ_PHONE_STATE,Manifest.permission.WRITE_EXTERNAL_STORAGE};
+
+	//boolean isStart = false;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_emulator);
 
+		requestPer();
+
 		initEntrys();
 //		getWindow().requestFeature(Window.FEATURE_NO_TITLE);//去掉标题栏
-		
+
+
 		handler = new Handler(this);
 		inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
@@ -241,13 +248,14 @@ public class EmulatorActivity extends Activity implements
 		emulator.attachActivity(this);
 		emulator.setRunMrp(mEntryMrp);
 		emulator.attachActivity(this);
-		
+
 		emulatorView = new EmuSurface(this);
 		emulatorView.setBackgroundColor(Color.TRANSPARENT);
 		continer =  (ViewGroup) findViewById(R.id.contener);
 		continer.addView(emulatorView, new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
-		
+
 		initPad();
+		keypad. switchMode();
 		
 		{
 			tvInfo = new TextView(this);
@@ -262,7 +270,7 @@ public class EmulatorActivity extends Activity implements
 			
 			int padding = getResources().getDimensionPixelSize(R.dimen.dp5);
 			tvInfo.setPadding(padding, padding, padding, padding);
-			continer.addView(tvInfo, new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
+		continer.addView(tvInfo, new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 		}
 		
 		if (!emulator.isRunning()) {
@@ -270,10 +278,19 @@ public class EmulatorActivity extends Activity implements
 			emulator.start();
 		}
 	}
-	
-	
+
+	private void requestPer() {
+        String[] permissions = {Manifest.permission.READ_PHONE_STATE,Manifest.permission.WRITE_EXTERNAL_STORAGE};
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+
+			requestPermissions(permissions,1);
+		}
+	}
+
+
 	@Override
 	protected void onPause() {
+
 		EmuLog.i(TAG, "onPause");
 
 		mPaused = true;
@@ -283,7 +300,7 @@ public class EmulatorActivity extends Activity implements
 		emulator.pause();
 		
 		if (!isFinishing()) {
-			entryBackground();
+		//	entryBackground();
 		} else {
 			Emulator.getInstance().getKeypad().setOnKeyEventListener(null);
 		}
@@ -297,14 +314,15 @@ public class EmulatorActivity extends Activity implements
 	
 	@Override
 	protected void onResume() {
+
 		EmuLog.i(TAG, "onResume");
 		
 		mPaused = false;
-		backFroground();
+	//	backFroground();
 		SdkUtils.onResume(this);
 
 		MrpoidSettings.getInstance().tempRead();
-		emulator.resume();
+		//emulator.resume();
 		
 		if(MrpoidSettings.showMemInfo)
 			handler.sendEmptyMessageDelayed(MSG_ID_UPDATE, 1000);
@@ -352,8 +370,8 @@ public class EmulatorActivity extends Activity implements
 	protected void onSaveInstanceState(Bundle outState) {
 		EmuLog.i(TAG, "onSaveInstanceState:" + outState);
 		
-		outState.putBoolean("hasSaved", true);
-		outState.putString("curMrpPath", emulator.getRunningMrpPath());
+	//	outState.putBoolean("hasSaved", true);
+		//outState.putString("curMrpPath", emulator.getRunningMrpPath());
 		
 		super.onSaveInstanceState(outState);
 	}
@@ -361,24 +379,24 @@ public class EmulatorActivity extends Activity implements
 	/**
 	 * 被杀后恢复
 	 */
-	@Override
-	protected void onRestoreInstanceState(Bundle savedInstanceState) {
-		EmuLog.i(TAG, "onRestoreInstanceState:" + savedInstanceState);
-		
-		if(savedInstanceState.getBoolean("hasSaved", false)) {
-			String curMrpPath = savedInstanceState.getString("curMrpPath");
-			if(curMrpPath != null){
-				EmuLog.i(TAG, "异常恢复成功");
-				Emulator.getInstance().setRunMrp(curMrpPath);
-			} else {
-				finish();
-			}
-		} else {
-			finish();
-		}
-
-		super.onRestoreInstanceState(savedInstanceState);
-	}
+//	@Override
+//	protected void onRestoreInstanceState(Bundle savedInstanceState) {
+//		EmuLog.i(TAG, "onRestoreInstanceState:" + savedInstanceState);
+//
+//		if(savedInstanceState.getBoolean("hasSaved", false)) {
+//			String curMrpPath = savedInstanceState.getString("curMrpPath");
+//			if(curMrpPath != null){
+//				EmuLog.i(TAG, "异常恢复成功");
+//				Emulator.getInstance().setRunMrp(curMrpPath);
+//			} else {
+//				finish();
+//			}
+//		} else {
+//			finish();
+//		}
+//
+//		super.onRestoreInstanceState(savedInstanceState);
+//	}
 	
 	public void postUIRunable(Runnable r) {
 		handler.post(r);

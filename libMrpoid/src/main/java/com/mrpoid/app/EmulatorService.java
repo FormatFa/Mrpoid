@@ -15,10 +15,13 @@
  */
 package com.mrpoid.app;
 
+import android.Manifest;
 import android.app.Notification;
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
+import android.os.Build;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.NotificationCompat;
 
 import com.mrpoid.R;
@@ -45,13 +48,14 @@ public class EmulatorService extends AppProcessService {
 	@Override
 	public void onCreate() {
 		super.onCreate();
-		
+		MrpRunner.init1(this);
 		Emulator.getInstance().attachApplicationContext(getApplicationContext());
 	}
 	
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
-		handleStart(intent);
+	handleStart(intent);
+
 		//改成start_redeliver，，博客說是services會殺死
 		return START_REDELIVER_INTENT;
 	}

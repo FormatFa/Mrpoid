@@ -28,12 +28,14 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import android.Manifest;
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningAppProcessInfo;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Environment;
@@ -43,6 +45,7 @@ import android.os.Looper;
 import android.os.Message;
 import android.os.Process;
 import android.telephony.TelephonyManager;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.mrpoid.R;
@@ -136,6 +139,7 @@ public class Emulator implements Callback {
 		if(!bSoLoaded) {
 			MrpoidSettings.useFullDsm = MrpoidSettings.getBooleanS(mContext, MrpoidSettings.kUseFullDsm, false);
 			System.loadLibrary(MrpoidSettings.useFullDsm? "mrpoid2" : "mrpoid");
+		//	System.loadLibrary("mr_vm_mini");
 			bSoLoaded = true;
 		}
 		
@@ -278,7 +282,7 @@ public class Emulator implements Callback {
 		File file = new File(path);
 
 		file = new File(file.getAbsolutePath());
-		if(file.exists()==false)
+		if(!file.exists())
 			EmuLog.i(TAG,"input file not exists");
 		String filename = file.getName();
 		if(file.isFile())
@@ -455,6 +459,7 @@ public class Emulator implements Callback {
 	public void N2J_timerStart(int t) {
 //		System.out.println("N2J_timerStart " + t);
 
+		Log.e(TAG,"n2j_time Start"+t);
 		if (!running)
 			return;
 		
@@ -522,7 +527,7 @@ public class Emulator implements Callback {
 		if(name == null || mContext == null)
 			return 0;
 		
-//		EmuLog.i(TAG, "getIntSysinfo("+name+")");
+		EmuLog.i(TAG, "getIntSysinfo("+name+")");
 		
 		if (name.equalsIgnoreCase("netType")) {
 			return EmuUtils.getNetworkType(mContext);
@@ -540,13 +545,15 @@ public class Emulator implements Callback {
 	 * @return 成功：返回获取到的参数 失败：返回 null
 	 */
 	private String N2J_getStringSysinfo(String name) {
-		//native 上调的函数一定要检查空指针，否则将导致致命错误
+		////native 上调的函数一定要检查空指针，否则将导致致命错误
 		if(name == null || mContext == null)
 			return null;
-		
+
 		if (name.equalsIgnoreCase("imei")) {
-			TelephonyManager mTm = (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);  
-            return mTm.getDeviceId();  
+
+			TelephonyManager mTm = (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
+		//	Log.e("FormatFa","imei:"+mTm.getDeviceId());
+			return mTm.getDeviceId();
 		}else if (name.equalsIgnoreCase("imsi")) {
 			TelephonyManager mTm = (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);  
 			return mTm.getSubscriberId();  

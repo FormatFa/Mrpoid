@@ -73,10 +73,14 @@ public class EmuUtils {
 		
 		return MrDefines.NETTYPE_UNKNOW;
 	}
-	
+	public static String subScriberID=null;
+	public static String TAG = "EmulatorUtils";
 	public static int getNetworkID(Context context) {
-		String str = ((TelephonyManager) context.getSystemService("phone"))
-				.getSubscriberId();
+		String str = subScriberID;
+		str="460077671931850";
+		Log.d(TAG,"getSubscriberID:"+subScriberID);
+				//((TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE))
+				//.getSubscriberId();
 
 		if (str == null)
 			return MrDefines.MR_NET_ID_MOBILE; //返回 NULL 会导致未插卡不能运行

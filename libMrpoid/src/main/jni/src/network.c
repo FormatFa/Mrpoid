@@ -15,6 +15,7 @@
 #include <linux/socket.h>
 #include <linux/tcp.h>
 #include <pthread.h>
+#include <stdlib.h>
 
 #include "emulator.h"
 #include "dsm.h"

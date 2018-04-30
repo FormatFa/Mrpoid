@@ -60,7 +60,7 @@ public class MrpoidSettingsActivity extends Activity {
 			
 			addPreferencesFromResource(R.xml.emu_preferences);
 			
-			sp = PreferenceManager.getDefaultSharedPreferences(getContext());
+			sp = PreferenceManager.getDefaultSharedPreferences(getActivity());
 			sp.registerOnSharedPreferenceChangeListener(this);
 			
 			// findPreference("version").setOnPreferenceClickListener(this);

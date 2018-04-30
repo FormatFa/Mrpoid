@@ -11,11 +11,14 @@
 #include <stdlib.h>
 
 #include "font/font_sky16_2.h"
+#include "encode.h"
 
 #define USE_JBITMAP
 
 #ifdef USE_JBITMAP
 #include <android/bitmap.h>
+#include <unistd.h>
+
 #endif
 
 //---------------------------------
@@ -69,13 +72,20 @@ static jobject		obj_emuAudio;
 static jobject		obj_realBitmap;
 
 static uint16		*realScreenBuffer;
-
+static int isrunning = 0;
 
 inline JNIEnv *getJniEnv()
 {
 //	LOGI("getJniEnv from %d", gettid());
 
-	return (gettid() == m_initTid)? gVmJniEnv : gMainJniEnv;
+	if(gettid() == m_initTid) {
+	LOGI("return gVmJniEnv");
+			return gVmJniEnv;
+	}
+	else
+	{LOGI("return gVmJniEnv");
+		return gMainJniEnv;}
+	//return (gettid() == m_initTid)? gVmJniEnv : gMainJniEnv;
 }
 
 JNIEnv *emu_attachJniEnv()
@@ -168,6 +178,7 @@ static void initJniId(JNIEnv * env, jobject self)
 
 	(*env)->DeleteLocalRef(env, cls);
 
+	LOGI("initJniId id_timerStop=%p",id_timerStop);
 	LOGI("initJniId id_timerStart=%p", id_timerStart);
 }
 
@@ -183,6 +194,7 @@ void sevg_handler(int signo)
 			"不小心又崩溃了%>_<%"
 	};
 
+	LOGE("Crash haha");
 	N2J_callVoidMethodString(2, (const char **)argv);
 
 	sleep(2);
@@ -193,7 +205,7 @@ void sevg_handler(int signo)
 //初始化模拟器  唯一实例
 void native_create(JNIEnv *env, jobject self, jobject mrpScreen, jobject emuAudio)
 {
-#if 0
+#if 1
 	signal(SIGSEGV, sevg_handler);
 #endif
 
@@ -365,7 +377,7 @@ void native_setStringOptions(JNIEnv * env, jobject self, jstring key, jstring va
 			SetDsmSDPath(str2);
 		} else if (strcasecmp(str, "mythroadPath") == 0) {
 			//mythroad 路径
-			SetDsmPath(str2);
+			 (str2);
 		} else if (strcasecmp(str, "dsmFactory") == 0) {
 			strncpy(dsmFactory, str2, 7);
 		} else if (strcasecmp(str, "dsmType") == 0) {
@@ -520,51 +532,95 @@ void native_mrpScreen_unLockBitmap(JNIEnv * env, jobject self)
 
 void emu_bitmapToscreen(uint16* data, int x, int y, int w, int h)
 {
+    LOGI("emu_bitmapToScreent");
 	if(m_bSuspendDraw)
 		return;
-
+    LOGI("emu_bitmapToScreent2");
 	int ret;
 	int				x1, y1, r, b;
 	int32			sw=SCNW, sh=SCNH;
 	
 	if(x>=sw || y>=sh || w<=0 || h<=0)
-		return;
-
+    {
+        LOGI("emu_bitmapToScreentg");
+        return;
+    }
+    LOGI("emu_bitmapToScreenttt");
 	r = sw-1, b = sh-1;
 	x1 = x+w-1, y1 = y+h-1;
 	clip_rect(&x, &y, &x1, &y1, r, b);
 	w = x1-x+1, h = y1-y+1;
-	
+    LOGI("emu_bitmapToScreentff");
 
 	JNIEnv *jniEnv = getJniEnv();
 
-	(*jniEnv)->MonitorEnter(jniEnv, obj_realBitmap);
+    if(!(*jniEnv))LOGE("hhhh");
+    LOGI("emu_bitmapToScreent87,%p.%p",jniEnv,obj_realBitmap);
+	if(!jniEnv)LOGE("hhhhh");
+	//(*jniEnv)->MonitorEnter(jniEnv, obj_realBitmap);
 
+    LOGI("emu_bitmapToScreent3");
 	//刷新到屏幕
 	uint16 *p = (uint16 *) realScreenBuffer;
 	int i;
+
+
 	for (i = y; i <= y1; i++)
 		memcpy((p + (sw * i) + x), (data + (sw * i) + x), w * 2);
 
-	(*jniEnv)->MonitorExit(jniEnv, obj_realBitmap);
-
+    //(*jniEnv)->MonitorExit(jniEnv, obj_realBitmap);
+    LOGI("emu_bitmapToScreent4");
 	(*jniEnv)->CallVoidMethod(jniEnv, obj_emulator, id_flush);
+    LOGI("emu_bitmssapToScreentlalala");
 }
+
 
 int32 emu_timerStart(uint16 t)
 {
+
+
 	JNIEnv *jniEnv = getJniEnv();
 
-//	LOGI("emu_timerStart jni=%p,obj=%p,id=%x,t=%d,tid=%d", jniEnv, obj_emulator, id_timerStart, t, gettid());
+//	*jniEnv=NULL;
 
-	(*jniEnv)->CallVoidMethod(jniEnv, obj_emulator, id_timerStart, (int)t);
+    LOGI("emu_timerStart jni=%p,obj=%p,id=%x,t=%d,tid=%d", jniEnv, obj_emulator, id_timerStart, t, gettid());
 
+//art::CheckJNI::CheckCallArgs(art::ScopedObjectAccess&, art::ScopedCheck&, _JNIEnv*, _jobject*, _jclass*, _jmethodID*, art::InvokeType, art::VarArgs const*) 0x00000000e57d6e3a
+    if(!jniEnv)
+    {
+        LOGE("jddj");
+    }
+    if(!obj_emulator)
+    {
+        LOGE("jddj");
+    }
+    if(!id_timerStart  )
+    {
+        LOGE("jddj");
+    }
+	LOGE("test:%p",id_timerStart);
+    if(jniEnv==NULL)
+    {
+        LOGI("hehe");
+    }
+    if(obj_emulator==NULL)
+    {
+        LOGI("666");
+    }
+    if(id_timerStart==NULL)
+    {
+        LOGI("666lalal");
+    }
+(*jniEnv)->CallVoidMethod(jniEnv, obj_emulator, id_timerStart, (int)t);
+	//(*jniEnv)->CallVoidMethod(jniEnv, obj_emulator, id_timerStop);
+LOGI("emu_timerStarted jni=%p,obj=%p,id=%x,t=%d,tid=%d", jniEnv, obj_emulator, id_timerStop, t, gettid());
 	return MR_SUCCESS;
 }
 
 int32 emu_timerStop()
 {
 	JNIEnv *jniEnv = getJniEnv();
+
 
 	(*jniEnv)->CallVoidMethod(jniEnv, obj_emulator, id_timerStop);
 
@@ -585,7 +641,7 @@ void N2J_callVoidMethodString(int argc, const char *argv[])
 {
 	JNIEnv *jniEnv = getJniEnv();
 
-//	LOGE("N2J_callVoidMethodString %d,%s", argc, argv[0]);
+	LOGE("N2J_callVoidMethodString %d,%s", argc, argv[0]);
 
 	jclass clsString = (*jniEnv)->FindClass(jniEnv, "java/lang/String");
 	jobjectArray arr = (*jniEnv)->NewObjectArray(jniEnv, argc, clsString, NULL);
@@ -794,7 +850,7 @@ const char *emu_getStringSysinfo(const char * name)
 		}
 	}
 
-	LOGE("emu_getStringSysinfo ret null");
+	LOGE("emu_getStringSysinfo ret null,%s",name);
 
 	return NULL;
 }
@@ -994,7 +1050,12 @@ static int rgb565_to_rgb888(int p)
 void emu_drawChar(uint16 ch, int x, int y, uint16 color)
 {
 	JNIEnv *jniEnv = getJniEnv();
+	LOGE("test:%p,%d",*gVmJniEnv,getpid());
 	(*jniEnv)->CallVoidMethod(jniEnv, obj_mrpScreen, id_drawChar, (jint)ch, x, y, rgb565_to_rgb888((int)color));
+	LOGE("test2:%p",*gVmJniEnv);
+
+
+    //(*jniEnv)=NULL;
 }
 
 void emu_measureChar(uint16 ch, int *w, int *h)
@@ -1012,7 +1073,7 @@ void emu_measureChar(uint16 ch, int *w, int *h)
 //	if(h != NULL)
 //		*h = ret;
 }
-//-------------- End MrpScreen.java ------------------------------------------------
+//-------------- End MrpScrearm-translationen.java ------------------------------------------------
 
 
 //-------------- Begin EmuAudio.java ------------------------------------------------

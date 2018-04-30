@@ -104,12 +104,12 @@
         <activity
             android:name="com.mrpoid.apps.AppActivity0"
             android:configChanges="orientation|keyboard"
-            android:process=":app0"
+
             android:theme="@style/emu_theme_black_notitle" />
 
         <service
             android:name="com.mrpoid.apps.AppService0"
-            android:process=":app0" />
+          />
 
         <!-- app1 -->
         <activity

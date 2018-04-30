@@ -8,3 +8,11 @@ MrpRunner的gContext为null
 
 2.mrp传入文件时复制到vm目录的逻辑修改,见
 Emulator.java的public void setRunMrp(String path) {方法
+//-----------------------上面是上学期时改的了
+
+3.待修复
+emulator.c的这个函数
+void emu_measureChar(uint16 ch, int *w, int *h)，w,h我改成固定了。。。。
+
+4.MrpScreen.java的public void draw(Canvas canvas) {函数(369行）的两句注释掉了
+native_lockBitmap();和native_unLockBitmap();这两句

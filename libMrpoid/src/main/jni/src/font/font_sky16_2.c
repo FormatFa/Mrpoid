@@ -52,7 +52,8 @@ int xl_font_sky16_init() //字体初始化，打开字体文件
 	font_ansi = malloc(sizeof(FONT_ANSI));
 //font_sky16_filename = "system/gb16_mrpoid.uc2";
 
-	font_sky16_f = mr_open("system/gb16_mrpoid.uc2", 0);
+	font_sky16_f = mr_open("sys"
+								   "tem/gb16_mrpoid.uc2", 0);
 //font_sky16_f= open(font_sky16_filename, O_RDONLY, 0777);
 //int f = open(LOGFILE,O_READ,0777);
 //lseek(f,0,2);
