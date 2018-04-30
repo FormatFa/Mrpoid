@@ -1,0 +1,53 @@
+add_library(mr_vm_full SHARED
+src/main/jni/src/mr/src/mr_api.c
+src/main/jni/src/mr/src/mr_debug.c
+                               src/main/jni/src/mr/src/mr_do.c
+                               src/main/jni/src/mr/src/mr_dump.c
+                               src/main/jni/src/mr/src/mr_func.c
+                              # src/main/jni/src/mr/src/mr_gc.c
+                               src/main/jni/src/mr/src/mr_mem.c
+                               src/main/jni/src/mr/src/mr_opcodes.c
+                               src/main/jni/src/mr/src/mr_object.c
+                               src/main/jni/src/mr/src/mr_state.c
+                               src/main/jni/src/mr/src/mr_string.c
+                               src/main/jni/src/mr/src/mr_table.c
+                               src/main/jni/src/mr/src/mr_tm.c
+                               src/main/jni/src/mr/src/mr_undump.c
+                               src/main/jni/src/mr/src/mr_vm.c
+                               src/main/jni/src/mr/src/mr_zio.c
+                               src/main/jni/src/mr/src/mr_noparser.c
+             #                 src/main/jni/src/mr/src/lparser.c
+             #                 src/main/jni/src/mr/src/mr_cect.c
+             #                 src/main/jni/src/mr/src/llex.c
+             #                 src/main/jni/src/mr/src/lcode.c
+                               src/main/jni/src/mr/src/lib/mr_auxlib.c
+                               src/main/jni/src/mr/src/lib/mr_auxiliar.c
+                               src/main/jni/src/mr/src/lib/mr_baselib.c
+                               src/main/jni/src/mr/src/lib/mr_tablib.c
+                               src/main/jni/src/mr/src/lib/mr_strlib.c
+                               src/main/jni/src/mr/src/lib/mr_socket_target.c
+                               src/main/jni/src/mr/src/lib/mr_tcp_target.c
+                               src/main/jni/src/mr/src/lib/mr_iolib_target.c
+             #                 src/main/jni/src/mr/src/loadlib.c
+             #                 src/main/jni/src/mr/src/ldblib.c
+                               src/main/jni/src/mr/mythroad.c
+                               src/main/jni/src/mr/mr_gb2312.c
+                               src/main/jni/src/mr/mr_pluto.c
+                               src/main/jni/src/mr/mr_unzip.c
+                               src/main/jni/src/mr/mr_util.c
+                               src/main/jni/src/mr/mr_encode.c
+             		    	   src/main/jni/src/mr/mr_graphics.c
+                               src/main/jni/src/mr/mr_inflate.c
+             #                 src/main/jni/src/mr/src/mr_maketo.c
+             #                 src/main/jni/src/mr/src/MySprite.c
+             #                 src/main/jni/src/mr/src/pluto.c
+             #                 src/main/jni/src/mr/src/Mylib.c
+                               src/main/jni/src/mr/tomr/src/tomr_event.c
+                               src/main/jni/src/mr/tomr/src/tomr_is.c
+                               src/main/jni/src/mr/tomr/src/tomr_map.c
+                               src/main/jni/src/mr/tomr/src/tomr_push.c
+                               src/main/jni/src/mr/tomr/src/tomr_to.c
+
+
+
+              )

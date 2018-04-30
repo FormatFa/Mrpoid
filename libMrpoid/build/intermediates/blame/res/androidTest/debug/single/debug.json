@@ -1,0 +1,242 @@
+[
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_dpad_n.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/dpad_n.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_dpad_n.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/dpad_n.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_bg_list_item_light.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/bg_list_item_light.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/menu_emu_main.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/menu/emu_main.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_bg_list_item_light_trans.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/bg_list_item_light_trans.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_bg_control_bar_raw.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/bg_control_bar_raw.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_garbage.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/garbage.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_tszylogo.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/tszylogo.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/anim_rota_left.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/anim/rota_left.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_btn_bg_p.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/btn_bg_p.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_ic_refresh_drak.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/ic_refresh_drak.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/layout_title_style0.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/layout/title_style0.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_shadebg.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/shadebg.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_float_menu_press.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/float_menu_press.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ind_bg.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/ind_bg.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/layout_dialog_screen_algin.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/layout/dialog_screen_algin.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/layout_activity_edit.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/layout/activity_edit.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable_bg_topbar.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable/bg_topbar.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/layout_file_path_chooser.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/layout/file_path_chooser.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-ldpi-v4_ic_launcher.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-ldpi-v4/ic_launcher.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_ic_remove.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/ic_remove.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ic_launcher.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/ic_launcher.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_bg_list_item_light_selected.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/bg_list_item_light_selected.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4__ok.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/_ok.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/layout_dialog_input.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/layout/dialog_input.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/layout_drawer_list_item.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/layout/drawer_list_item.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_new_folder.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/new_folder.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_bg_list_item_dark.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/bg_list_item_dark.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_bg_topbar_raw.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/bg_topbar_raw.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_ic_folder.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/ic_folder.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/layout_activity_emulator.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/layout/activity_emulator.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4__back.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/_back.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_btn_bg_p.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/btn_bg_p.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable_btn_bg.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable/btn_bg.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_btn_bg_n.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/btn_bg_n.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ind.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/ind.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_dpad_p.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/dpad_p.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_btn_bg_n.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/btn_bg_n.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_dpad_p.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/dpad_p.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/anim_rota_right.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/anim/rota_right.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/layout_activity_key_sprite.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/layout/activity_key_sprite.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/layout_file_path_listitem.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/layout/file_path_listitem.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/layout_activity_keypad.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/layout/activity_keypad.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_bg_list_item_dark_selected.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/bg_list_item_dark_selected.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/layout_activity_emulator_drawer.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/layout/activity_emulator_drawer.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/layout_key_sprite_item.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/layout/key_sprite_item.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_ic_refresh.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/ic_refresh.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable_btn_text.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable/btn_text.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_float_menu.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/float_menu.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable_bg_control.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable/bg_control.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_ic_notify.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/ic_notify.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_line.9.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/line.9.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_bg_list_item_dark_trans.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/bg_list_item_dark_trans.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_ic_add.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/ic_add.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/layout_dialog_single_edit.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/layout/dialog_single_edit.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/layout_seekbar_dialog.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/layout/seekbar_dialog.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_ic_notify_small.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/ic_notify_small.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4__edit.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/_edit.png"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/xml_emu_preferences.xml.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/xml/emu_preferences.xml"
+    },
+    {
+        "merged": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_ic_launcher.png.flat",
+        "source": "/home/formatfa/Android/Mrper/libMrpoid/build/intermediates/packaged_res/debug/drawable-hdpi-v4/ic_launcher.png"
+    }
+]

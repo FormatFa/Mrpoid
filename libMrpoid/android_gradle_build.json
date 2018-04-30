@@ -1,0 +1,152 @@
+
+{
+	"buildFiles" : [ "D:/AndroidStudioProjects/Mrper/libMrpoid/CMakeLists.txt" ],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"E:\\android\\androidstudio\\sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidStudioProjects\\Mrper\\libMrpoid --target clean"
+	],
+	"libraries" : 
+	{
+		"mr_vm_mini-Release-armeabi" : 
+		{
+			"abi" : "armeabi",
+			"artifactName" : "mr_vm_mini",
+			"buildCommand" : "E:\\android\\androidstudio\\sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidStudioProjects\\Mrper\\libMrpoid --target mr_vm_mini",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=E:/android/androidstudio/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=E:/android/androidstudio/sdk/ndk-bundle/sysroot -DDSM_MINI -DMR_PLAT_DRAWTEXT -DMR_PLAT_U2C -DMR_VERSION=2011 -DMTK_MOD -DTARGET_MOD -Isrc\\main\\jni\\src\\mr\\include -Isrc\\main\\jni\\src\\mr_pre\\include -Isrc\\main\\jni\\src\\lib  -isystem E:/android/androidstudio/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=17 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG  -fPIC   -c -littleend    -c ",
+					"src" : "D:/AndroidStudioProjects/Mrper/libMrpoid/src/main/jni/src/mr/mythroad_mini.c",
+					"workingDirectory" : "D:/AndroidStudioProjects/Mrper/libMrpoid"
+				},
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=E:/android/androidstudio/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=E:/android/androidstudio/sdk/ndk-bundle/sysroot -DDSM_MINI -DMR_PLAT_DRAWTEXT -DMR_PLAT_U2C -DMR_VERSION=2011 -DMTK_MOD -DTARGET_MOD -Isrc\\main\\jni\\src\\mr\\include -Isrc\\main\\jni\\src\\mr_pre\\include -Isrc\\main\\jni\\src\\lib  -isystem E:/android/androidstudio/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=17 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG  -fPIC   -c -littleend    -c ",
+					"src" : "D:/AndroidStudioProjects/Mrper/libMrpoid/src/main/jni/src/mr/mr_gb2312.c",
+					"workingDirectory" : "D:/AndroidStudioProjects/Mrper/libMrpoid"
+				},
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=E:/android/androidstudio/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=E:/android/androidstudio/sdk/ndk-bundle/sysroot -DDSM_MINI -DMR_PLAT_DRAWTEXT -DMR_PLAT_U2C -DMR_VERSION=2011 -DMTK_MOD -DTARGET_MOD -Isrc\\main\\jni\\src\\mr\\include -Isrc\\main\\jni\\src\\mr_pre\\include -Isrc\\main\\jni\\src\\lib  -isystem E:/android/androidstudio/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=17 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG  -fPIC   -c -littleend    -c ",
+					"src" : "D:/AndroidStudioProjects/Mrper/libMrpoid/src/main/jni/src/mr/mr_unzip.c",
+					"workingDirectory" : "D:/AndroidStudioProjects/Mrper/libMrpoid"
+				},
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=E:/android/androidstudio/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=E:/android/androidstudio/sdk/ndk-bundle/sysroot -DDSM_MINI -DMR_PLAT_DRAWTEXT -DMR_PLAT_U2C -DMR_VERSION=2011 -DMTK_MOD -DTARGET_MOD -Isrc\\main\\jni\\src\\mr\\include -Isrc\\main\\jni\\src\\mr_pre\\include -Isrc\\main\\jni\\src\\lib  -isystem E:/android/androidstudio/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=17 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG  -fPIC   -c -littleend    -c ",
+					"src" : "D:/AndroidStudioProjects/Mrper/libMrpoid/src/main/jni/src/mr/mr_util.c",
+					"workingDirectory" : "D:/AndroidStudioProjects/Mrper/libMrpoid"
+				},
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=E:/android/androidstudio/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=E:/android/androidstudio/sdk/ndk-bundle/sysroot -DDSM_MINI -DMR_PLAT_DRAWTEXT -DMR_PLAT_U2C -DMR_VERSION=2011 -DMTK_MOD -DTARGET_MOD -Isrc\\main\\jni\\src\\mr\\include -Isrc\\main\\jni\\src\\mr_pre\\include -Isrc\\main\\jni\\src\\lib  -isystem E:/android/androidstudio/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=17 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG  -fPIC   -c -littleend    -c ",
+					"src" : "D:/AndroidStudioProjects/Mrper/libMrpoid/src/main/jni/src/mr/mr_encode.c",
+					"workingDirectory" : "D:/AndroidStudioProjects/Mrper/libMrpoid"
+				},
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=E:/android/androidstudio/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=E:/android/androidstudio/sdk/ndk-bundle/sysroot -DDSM_MINI -DMR_PLAT_DRAWTEXT -DMR_PLAT_U2C -DMR_VERSION=2011 -DMTK_MOD -DTARGET_MOD -Isrc\\main\\jni\\src\\mr\\include -Isrc\\main\\jni\\src\\mr_pre\\include -Isrc\\main\\jni\\src\\lib  -isystem E:/android/androidstudio/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=17 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG  -fPIC   -c -littleend    -c ",
+					"src" : "D:/AndroidStudioProjects/Mrper/libMrpoid/src/main/jni/src/mr/mr_inflate.c",
+					"workingDirectory" : "D:/AndroidStudioProjects/Mrper/libMrpoid"
+				},
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=E:/android/androidstudio/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=E:/android/androidstudio/sdk/ndk-bundle/sysroot -DDSM_MINI -DMR_PLAT_DRAWTEXT -DMR_PLAT_U2C -DMR_VERSION=2011 -DMTK_MOD -DTARGET_MOD -Isrc\\main\\jni\\src\\mr\\include -Isrc\\main\\jni\\src\\mr_pre\\include -Isrc\\main\\jni\\src\\lib  -isystem E:/android/androidstudio/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=17 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG  -fPIC   -c -littleend    -c ",
+					"src" : "D:/AndroidStudioProjects/Mrper/libMrpoid/src/main/jni/src/mr/mr_graphics.c",
+					"workingDirectory" : "D:/AndroidStudioProjects/Mrper/libMrpoid"
+				}
+			],
+			"output" : "D:/AndroidStudioProjects/Mrper/libMrpoid/libmr_vm_mini.a",
+			"toolchain" : "849565601"
+		},
+		"mrpoid-Release-armeabi" : 
+		{
+			"abi" : "armeabi",
+			"artifactName" : "mrpoid",
+			"buildCommand" : "E:\\android\\androidstudio\\sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidStudioProjects\\Mrper\\libMrpoid --target mrpoid",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=E:/android/androidstudio/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=E:/android/androidstudio/sdk/ndk-bundle/sysroot -DDSM_MINI -DMR_PLAT_DRAWTEXT -DMR_PLAT_U2C -DMR_VERSION=2011 -DMTK_MOD -DTARGET_MOD -Dmrpoid_EXPORTS -Isrc\\main\\jni\\src\\mr\\include -Isrc\\main\\jni\\src\\mr_pre\\include -Isrc\\main\\jni\\src\\lib  -isystem E:/android/androidstudio/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=17 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG  -fPIC   -c -littleend    -c ",
+					"src" : "D:/AndroidStudioProjects/Mrper/libMrpoid/src/main/jni/src/emulator.c",
+					"workingDirectory" : "D:/AndroidStudioProjects/Mrper/libMrpoid"
+				},
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=E:/android/androidstudio/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=E:/android/androidstudio/sdk/ndk-bundle/sysroot -DDSM_MINI -DMR_PLAT_DRAWTEXT -DMR_PLAT_U2C -DMR_VERSION=2011 -DMTK_MOD -DTARGET_MOD -Dmrpoid_EXPORTS -Isrc\\main\\jni\\src\\mr\\include -Isrc\\main\\jni\\src\\mr_pre\\include -Isrc\\main\\jni\\src\\lib  -isystem E:/android/androidstudio/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=17 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG  -fPIC   -c -littleend    -c ",
+					"src" : "D:/AndroidStudioProjects/Mrper/libMrpoid/src/main/jni/src/dsm.c",
+					"workingDirectory" : "D:/AndroidStudioProjects/Mrper/libMrpoid"
+				},
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=E:/android/androidstudio/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=E:/android/androidstudio/sdk/ndk-bundle/sysroot -DDSM_MINI -DMR_PLAT_DRAWTEXT -DMR_PLAT_U2C -DMR_VERSION=2011 -DMTK_MOD -DTARGET_MOD -Dmrpoid_EXPORTS -Isrc\\main\\jni\\src\\mr\\include -Isrc\\main\\jni\\src\\mr_pre\\include -Isrc\\main\\jni\\src\\lib  -isystem E:/android/androidstudio/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=17 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG  -fPIC   -c -littleend    -c ",
+					"src" : "D:/AndroidStudioProjects/Mrper/libMrpoid/src/main/jni/src/network.c",
+					"workingDirectory" : "D:/AndroidStudioProjects/Mrper/libMrpoid"
+				},
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=E:/android/androidstudio/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=E:/android/androidstudio/sdk/ndk-bundle/sysroot -DDSM_MINI -DMR_PLAT_DRAWTEXT -DMR_PLAT_U2C -DMR_VERSION=2011 -DMTK_MOD -DTARGET_MOD -Dmrpoid_EXPORTS -Isrc\\main\\jni\\src\\mr\\include -Isrc\\main\\jni\\src\\mr_pre\\include -Isrc\\main\\jni\\src\\lib  -isystem E:/android/androidstudio/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=17 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG  -fPIC   -c -littleend    -c ",
+					"src" : "D:/AndroidStudioProjects/Mrper/libMrpoid/src/main/jni/src/utils.c",
+					"workingDirectory" : "D:/AndroidStudioProjects/Mrper/libMrpoid"
+				},
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=E:/android/androidstudio/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=E:/android/androidstudio/sdk/ndk-bundle/sysroot -DDSM_MINI -DMR_PLAT_DRAWTEXT -DMR_PLAT_U2C -DMR_VERSION=2011 -DMTK_MOD -DTARGET_MOD -Dmrpoid_EXPORTS -Isrc\\main\\jni\\src\\mr\\include -Isrc\\main\\jni\\src\\mr_pre\\include -Isrc\\main\\jni\\src\\lib  -isystem E:/android/androidstudio/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=17 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG  -fPIC   -c -littleend    -c ",
+					"src" : "D:/AndroidStudioProjects/Mrper/libMrpoid/src/main/jni/src/vm.c",
+					"workingDirectory" : "D:/AndroidStudioProjects/Mrper/libMrpoid"
+				},
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=E:/android/androidstudio/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=E:/android/androidstudio/sdk/ndk-bundle/sysroot -DDSM_MINI -DMR_PLAT_DRAWTEXT -DMR_PLAT_U2C -DMR_VERSION=2011 -DMTK_MOD -DTARGET_MOD -Dmrpoid_EXPORTS -Isrc\\main\\jni\\src\\mr\\include -Isrc\\main\\jni\\src\\mr_pre\\include -Isrc\\main\\jni\\src\\lib  -isystem E:/android/androidstudio/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=17 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG  -fPIC   -c -littleend    -c ",
+					"src" : "D:/AndroidStudioProjects/Mrper/libMrpoid/src/main/jni/src/msgqueue.c",
+					"workingDirectory" : "D:/AndroidStudioProjects/Mrper/libMrpoid"
+				},
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=E:/android/androidstudio/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=E:/android/androidstudio/sdk/ndk-bundle/sysroot -DDSM_MINI -DMR_PLAT_DRAWTEXT -DMR_PLAT_U2C -DMR_VERSION=2011 -DMTK_MOD -DTARGET_MOD -Dmrpoid_EXPORTS -Isrc\\main\\jni\\src\\mr\\include -Isrc\\main\\jni\\src\\mr_pre\\include -Isrc\\main\\jni\\src\\lib  -isystem E:/android/androidstudio/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=17 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG  -fPIC   -c -littleend    -c ",
+					"src" : "D:/AndroidStudioProjects/Mrper/libMrpoid/src/main/jni/src/register_natives.c",
+					"workingDirectory" : "D:/AndroidStudioProjects/Mrper/libMrpoid"
+				},
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=E:/android/androidstudio/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=E:/android/androidstudio/sdk/ndk-bundle/sysroot -DDSM_MINI -DMR_PLAT_DRAWTEXT -DMR_PLAT_U2C -DMR_VERSION=2011 -DMTK_MOD -DTARGET_MOD -Dmrpoid_EXPORTS -Isrc\\main\\jni\\src\\mr\\include -Isrc\\main\\jni\\src\\mr_pre\\include -Isrc\\main\\jni\\src\\lib  -isystem E:/android/androidstudio/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=17 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG  -fPIC   -c -littleend    -c ",
+					"src" : "D:/AndroidStudioProjects/Mrper/libMrpoid/src/main/jni/src/encode.c",
+					"workingDirectory" : "D:/AndroidStudioProjects/Mrper/libMrpoid"
+				},
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=E:/android/androidstudio/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=E:/android/androidstudio/sdk/ndk-bundle/sysroot -DDSM_MINI -DMR_PLAT_DRAWTEXT -DMR_PLAT_U2C -DMR_VERSION=2011 -DMTK_MOD -DTARGET_MOD -Dmrpoid_EXPORTS -Isrc\\main\\jni\\src\\mr\\include -Isrc\\main\\jni\\src\\mr_pre\\include -Isrc\\main\\jni\\src\\lib  -isystem E:/android/androidstudio/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=17 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG  -fPIC   -c -littleend    -c ",
+					"src" : "D:/AndroidStudioProjects/Mrper/libMrpoid/src/main/jni/src/font/font_sky16_2.c",
+					"workingDirectory" : "D:/AndroidStudioProjects/Mrper/libMrpoid"
+				},
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=E:/android/androidstudio/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=E:/android/androidstudio/sdk/ndk-bundle/sysroot -DDSM_MINI -DMR_PLAT_DRAWTEXT -DMR_PLAT_U2C -DMR_VERSION=2011 -DMTK_MOD -DTARGET_MOD -Dmrpoid_EXPORTS -Isrc\\main\\jni\\src\\mr\\include -Isrc\\main\\jni\\src\\mr_pre\\include -Isrc\\main\\jni\\src\\lib  -isystem E:/android/androidstudio/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=17 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG  -fPIC   -c -littleend    -c ",
+					"src" : "D:/AndroidStudioProjects/Mrper/libMrpoid/src/main/jni/src/lib/TimeUtils.c",
+					"workingDirectory" : "D:/AndroidStudioProjects/Mrper/libMrpoid"
+				},
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=E:/android/androidstudio/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=E:/android/androidstudio/sdk/ndk-bundle/sysroot -DDSM_MINI -DMR_PLAT_DRAWTEXT -DMR_PLAT_U2C -DMR_VERSION=2011 -DMTK_MOD -DTARGET_MOD -Dmrpoid_EXPORTS -Isrc\\main\\jni\\src\\mr\\include -Isrc\\main\\jni\\src\\mr_pre\\include -Isrc\\main\\jni\\src\\lib  -isystem E:/android/androidstudio/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=17 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG  -fPIC   -c -littleend    -c ",
+					"src" : "D:/AndroidStudioProjects/Mrper/libMrpoid/src/main/jni/src/lib/JniUtils.c",
+					"workingDirectory" : "D:/AndroidStudioProjects/Mrper/libMrpoid"
+				}
+			],
+			"output" : "D:/AndroidStudioProjects/Mrper/libMrpoid/build/intermediates/cmake/sourceSets/obj/armeabi/libmrpoid.so",
+			"toolchain" : "849565601"
+		}
+	},
+	"toolchains" : 
+	{
+		"849565601" : 
+		{
+			"cCompilerExecutable" : "E:/android/androidstudio/sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "E:/android/androidstudio/sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

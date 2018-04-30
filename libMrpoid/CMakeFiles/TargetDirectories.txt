@@ -1,0 +1,4 @@
+D:/AndroidStudioProjects/Mrper/libMrpoid/CMakeFiles/mr_vm_mini.dir
+D:/AndroidStudioProjects/Mrper/libMrpoid/CMakeFiles/mrpoid.dir
+D:/AndroidStudioProjects/Mrper/libMrpoid/CMakeFiles/edit_cache.dir
+D:/AndroidStudioProjects/Mrper/libMrpoid/CMakeFiles/rebuild_cache.dir
