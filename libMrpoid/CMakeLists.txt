@@ -37,7 +37,6 @@ add_library(vm_full_prebuilt
 SHARED
 ${PROJECT}/mr_pre/include/test.c)
 
-
 #添加lib_vm_mini.a
 add_library(mr_vm_mini
 STATIC
