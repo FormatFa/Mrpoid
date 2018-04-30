@@ -223,10 +223,10 @@
     <string name="video_settings">显示设置</string>
     <string name="warn">警告</string>
     <style name="emu_theme_black" parent="@android:style/Theme"/>
-    <style name="emu_theme_black_notitle" parent="@android:style/Theme.NoTitleBar"/>
-    <style name="emu_theme_light" parent="@android:style/Theme"/>
-    <style name="emu_theme_light_dark" parent="@android:style/Theme"/>
-    <style name="emu_theme_light_notitle" parent="@android:style/Theme.NoTitleBar"/>
+    <style name="emu_theme_black_notitle" parent="@android:style/Theme.DeviceDefault"/>
+    <style name="emu_theme_light" parent="@android:style/Theme.DeviceDefault"/>
+    <style name="emu_theme_light_dark" parent="@android:style/Theme.DeviceDefault"/>
+    <style name="emu_theme_light_notitle" parent="@android:style/Theme.DeviceDefault"/>
     <style name="emu_theme_preference" parent="@style/emu_theme_black"/>
     <style name="emu_theme_wallpaper_notitle" parent="@android:style/Theme.Wallpaper.NoTitleBar"/>
 </resources>

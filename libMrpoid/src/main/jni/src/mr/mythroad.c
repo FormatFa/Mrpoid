@@ -5503,6 +5503,7 @@ static int SendSms(mrp_State* L)
 /*取得网络ID，0 移动，1 联通*/
 static int GetNetworkID(mrp_State* L)
 {
+
    int id = mr_getNetworkID();
    mrp_pushnumber(L, id);
    return 1;
@@ -8869,6 +8870,7 @@ int32 mr_smsIndiaction(uint8 *pContent, int32 nLen, uint8 *pNum, int32 type)//nL
 static int32 _mr_newSIMInd(int16  type, uint8* old_IMSI)
 {
    int32 id = mr_getNetworkID();
+
    uint8 flag;
    char num[MR_MAX_NUM_LEN];
    int32 f;
